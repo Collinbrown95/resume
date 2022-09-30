@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c make html
+make html
