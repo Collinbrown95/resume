@@ -17,6 +17,8 @@ all: html docx rtf
 # 	done
 
 html: init
+# Copy image folder to output dir so images are available in resume*.html
+	cp -r img/ output/
 	for f in $(IN_DIR)/*.md; do \
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
 		echo $$FILE_NAME.html; \

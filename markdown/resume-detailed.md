@@ -1,7 +1,7 @@
 Collin Brown
 ============
 
-| ![github](../img/github.png ) | [github.com](https://github.com/collinbrown95) | ![linkedin](../img/linkedin.png) | [linkedin.com](https://ca.linkedin.com/in/collin-brown-499a4580) |
+| ![github](img/github.png ) | [github.com](https://github.com/collinbrown95) | ![linkedin](img/linkedin.png) | [linkedin.com](https://ca.linkedin.com/in/collin-brown-499a4580) |
 | ---------------------------- | ---------------------------------------------- | -------------------------------- | ------------------------------------------------ |
 
 ----
