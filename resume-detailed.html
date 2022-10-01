@@ -49,7 +49,7 @@
   /* } */
 
   /* Titles of categories */
-  h2 {
+  h2, h3, h4 {
       /* This is called "sectioncolor" in the ConTeXt stylesheet. */
       color: #397249;
   }
@@ -108,7 +108,7 @@
   }
 
   table {
-      width: 100%;
+      width: 50%;
   }
   </style>
 </head>
@@ -133,19 +133,23 @@
 <hr />
 <h2 id="experience">Experience</h2>
 <h3 id="lead-software-developer-jun-2022---present">Lead Software Developer · (Jun 2022 - Present)</h3>
-<p><strong>Statistics Canada · Data Science Division</strong></p>
-<p>In this position, I have two primary responsibilities: (1) Kubernetes platform development for our organization’s analytics environment (the <a href="https://statcan.github.io/daaas/en/" target="_blank">Advanced Analytics Workspace</a>) and (2) providing the required expertise to bring Data Science projects into production. I elaborate on each area of responsibility below.</p>
+<h4 id="statistics-canada-data-science-division">Statistics Canada · Data Science Division</h4>
+<p>In this position, I have three primary responsibilities: (1) Kubernetes platform development for our organization’s analytics environment (the <a href="https://statcan.github.io/daaas/en/" target="_blank">Advanced Analytics Workspace</a>); (2) putting Data Science projects into production; and (3) Providing horizontal technical advisory/consulting services to various employees in the organization. I elaborate on each area of responsibility below.</p>
 <blockquote>
 <p><strong>Kubernetes Platform Development</strong></p>
 </blockquote>
 <p><strong>S3 object storage for platform users</strong></p>
-<blockquote>
-<p>TODO</p>
-</blockquote>
+<ul>
+<li>Created an S3 application to provide platform users with an S3 interface by combining two open source tools: <a href="https://github.com/StatCan/aws-js-s3-explorer" target="_blank">aws-js-explorer</a> (client-side) and <a href="https://github.com/gaul/s3proxy" target="_blank">S3Proxy</a> (server-side).</li>
+<li>Wrote several middleware components to handle networking concerns such as a custom service worker to intercept and modify requests from the browser and an Istio Virtual Service to apply service mesh routing logic.</li>
+<li>Wrote helm chart templates and kubernetes manifests to automatically deploy this S3 application to multiple users’ namespaces with ArgoCD.</li>
+</ul>
 <p><strong>Cloud Environment network connectivity for employees</strong></p>
-<blockquote>
-<p>TODO</p>
-</blockquote>
+<ul>
+<li>Wrote a kubernetes controller to create several Istio resources to handle routing of certain requests to an Istio Egress Gateway.</li>
+<li>Wrote ArgoCD deployment to deploy abovementioned controller alongside other required Kubernetes resources.</li>
+<li>Modified Terraform configuration to provision necessary cloud resources for this feature such as an Azure Kubernetes Service (AKS) node pool, Azure subnet, and firewall rules.</li>
+</ul>
 <p><strong>Add specialized node pools to the kubernetes cluster</strong></p>
 <ul>
 <li>Wrote Terraform configuration to add specialized node pools to our Kubernetes cluster such as Azure’s <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/fsv2-series" target="_blank">Fsv2-series</a> VMs for CPU intensive workloads and <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/ncv3-series" target="_blank">NCv3-series</a> VMs for data science workloads that require multiple GPUs.</li>
@@ -154,13 +158,29 @@
 <blockquote>
 <p><strong>Putting Data Science Projects into Production</strong></p>
 </blockquote>
-<p><strong>PDF Document Information Extraction Tool</strong></p>
+<p><strong>Custom PDF Document Information Extraction Application</strong></p>
 <ul>
-<li>Wrote helm chart for a Data Science application that uses machine learning to extract specific information from unstructured PDF documents.</li>
+<li>Led an effort to deploy a custom-built PDF extraction application into our organization’s internal Kubernetes production environment.</li>
+<li>Wrote a helm chart to deploy several components such as a deployment for the custom web application, several cron jobs that perform actions such as an SFTP pull and data ETL, Elasticsearch Kubernetes Operator, Kibana Kubernetes Operator, and <a href="https://github.com/gaul/s3proxy" target="_blank">S3Proxy</a>.</li>
+<li>Wrote terraform configuration to provision resources from Azure such as Storage Accounts and Storage Containers to be used by the application.</li>
+<li>Onboarded the original developers of the application to the Kubernetes environment</li>
+</ul>
+<blockquote>
+<p><strong>Horizontal Technical Advisory</strong></p>
+</blockquote>
+<p><strong>Cloud-Native Data Processing System Redesign</strong></p>
+<ul>
+<li>Provided technical advisory services to a project team engaging in a cloud-native redesign of a data processing system.</li>
+<li>Provided recommendations around user experience, data processing workflows, code organization, and version control.</li>
+</ul>
+<p><strong>DevOps / Data Engineering Centre of Expertise (CoE)</strong></p>
+<ul>
+<li>Chaired weekly meetings to provide advisory services related to DevOps and Data Engineering.</li>
+<li>Advised Data Science project teams on topics such as product deployments, software development design considerations, and cloud infrastructure decisions.</li>
 </ul>
 <h3 id="senior-software-developer-may-2021---jun-2022">Senior Software Developer · (May 2021 - Jun 2022)</h3>
-<p><strong>Statistics Canada · Data Science Division</strong></p>
-<p>In this position, I was acting as the senior software developer on an 18-month cloud-native redesign of the data processing system for a large statistical program Statistics Canada. From May 2021 to July 2021, I worked directly under the project technical lead, and from August 2021 to March 31 , 2022 I acted as the technical lead for the project. The project was completed successfully (on-time and on-budget) on March 31, 2022. Listed below are my primary duties in this position</p>
+<h4 id="statistics-canada-data-science-division-1">Statistics Canada · Data Science Division</h4>
+<p>In this position, I was acting as the senior software developer on an 18-month cloud-native redesign of the data processing system for a large statistical program Statistics Canada. From May 2021 to July 2021, I worked directly under the project technical lead, and from August 2021 to March 31, 2022 I acted as the technical lead for the project. The project was delivered successfully (feature-complete, on-time, and at a cost significantly lower than the next best alternative) on March 31, 2022. Listed below were my primary duties in this position.</p>
 <blockquote>
 <p><strong>Supervise the work of other developers</strong></p>
 </blockquote>
@@ -180,44 +200,81 @@
 <li>Designed the release management strategy for our project that synchronizes source code and infrastructure changes with our deployment environments so that development, test, and production environments can be updated independently.</li>
 </ul>
 <h3 id="software-developer-oct-2020---may-2021">Software Developer · (Oct 2020 - May 2021)</h3>
-<p><strong>Statistics Canada · Data Science Division</strong></p>
-<p>TODO</p>
-<h3 id="data-scientist-software-developer">Data Scientist / Software Developer</h3>
-<p><strong>Employment and Social Development Canada</strong> · <strong>Data Science Division</strong> · Aug 2018 - Oct 2020</p>
-<p>TODO</p>
+<h4 id="statistics-canada-data-science-division-2">Statistics Canada · Data Science Division</h4>
+<p>In this position, I was a core developer on an 18-month cloud-native redesign of the data processing system for a large statistical program at Statistics Canada. I list below several core features and items I implemented for this project.</p>
+<ul>
+<li>Designed and implemented a framework to organize a significant amount of business logic required for data processing and validation across dozens of different data sources.</li>
+<li>Designed and implemented a framework to apply unit testing and integration testing to the business logic of the system.</li>
+<li>Designed and implemented other aspects of the system such as the data storage layer, the user interface layer, and the workflow orchestration (data pipeline) component.</li>
+</ul>
+<p>In addition, I helped various Data Scientists and Data Analysts with Data Engineering and Software Development implementations through direct help and presentations to larger audiences.</p>
+<ul>
+<li>Delivered a presentation to ~50 Data Scientists on how to use Data Version Control (DVC) - a tool to synchronize large file versioning with the commit history of a Git repository.</li>
+<li>Guided Data Scientists and Data Analysts to onboard their project source code and documentation to Gitlab and showed them how to apply good version control practices.</li>
+<li>Consulted various Data Scientists on how to write application code to interface with certain platform services (e.g. Elasticsearch, S3-Compatible Object Storage, etc.)</li>
+</ul>
+<h3 id="data-scientist-software-developer-aug-2018---oct-2020">Data Scientist / Software Developer (Aug 2018 - Oct 2020)</h3>
+<h4 id="employment-and-social-development-canada-data-science-division">Employment and Social Development Canada · Data Science Division</h4>
+<p>In this role, I have worked on both conventional Data Science projects (e.g. data processing, machine learning, etc.) and web development for the purpose of prototyping and creating proof-of-concept products that are used to consume the outputs of Data Science projects.</p>
+<blockquote>
+<p><strong>Web Development</strong></p>
+</blockquote>
+<ul>
+<li>Led the development of several proof-of-concept web applications to alleviate the administrative burden associated with common tasks.</li>
+<li>Created programs to automate the processing of data (e.g. a set of scripts that automatically convert raw XML data into a formatted and populated Microsoft Excel workbook)</li>
+<li>Handled small-scale deployments of applications for prototyping and testing purposes, leveraging containerization (Docker), cloud (Microsoft Azure), and version control (Git/GitHub) technologies</li>
+<li>Created and contributed to various sources of instructions and software documentation</li>
+</ul>
+<blockquote>
+<p><strong>Data Science and Machine Learning</strong></p>
+</blockquote>
+<ul>
+<li>Wrote several reports with literature reviews on various methodologies (e.g. how machine learning techniques can be used in ad-hoc information retrieval)</li>
+<li>Quickly tested and experimented with different machine learning techniques to assess project feasibility (e.g. applying pre-trained word embedding models to problems involving free-text data)</li>
+<li>Wrote programs to independently evaluate the performance of other teams’ machine learning models</li>
+<li>Tested and experimented with ways that user interaction could be recorded to implicitly label data (e.g. created a simple client-side javascript library to anonymously track how users interact with the predictions of machine learning models).</li>
+</ul>
 <h2 id="skills-tools-and-technology">Skills, Tools, and Technology</h2>
-<dl>
-<dt>DevOps</dt>
-<dd>Kubernetes Development · Packacing Kubernetes Applications (e.g. Helm, Kustomize, Jsonnet) · Writing Custom Kubernetes Controllers (Golang)
-</dd>
-<dt>CI/CD</dt>
-<dd>ArgoCD · Gitlab CI · Github Actions · Bash Scripting
-</dd>
-<dt>GitOps and Cloud</dt>
-<dd>Terraform · Azure · S3 Object Storage · Azure Blob Storage · Istio · Managed Databases
-</dd>
-<dt>Web</dt>
-<dd>Python · JavaScript · React · Vue · d3.js · Flask · FastAPI · ORM (e.g. SQLAlchemy) · SQL Databases (e.g. SQLite, Postgres) · Document Oriented Databases (e.g. Elasticsearch)
-</dd>
-<dt>Docs</dt>
-<dd>Static site generators (e.g. mkdocs) · Writing Software Documentation · Implementing Coding and Docstring Standards in Projects (e.g. Google Python Style Guide)
-</dd>
-<dt>Data Processing</dt>
-<dd>Pandas · Numpy · Implementing Scalable Data Processing Jobs on Kubernetes with Argo Workflows · Schema Management and Data Validation (e.g. Pandera, Pydantic)
-</dd>
-<dt>Data Science</dt>
-<dd>Text Data Analysis (e.g. spaCy) · Web Scraping (Scrapy, Beautiful Soup) · Deep Learning Frameworks (e.g. Tensorflow, Pytorch) · Deep Learning Theory (e.g. sequence models, convolutional neural networks)
-</dd>
-<dt>Economics and Stats</dt>
-<dd>Stata · MATLAB · R · Econometric Modeling (Regression Analysis, Panel Data Methods) · Time Series Econometrics · Empirical Microeconomics · Research Design · Experimental Economics
-</dd>
-<dt>General</dt>
-<dd>Public Speaking · Leadership · Consulting · Communication · Academic and Non-Academic Writing · Presentations
-</dd>
-<dt>Languages</dt>
-<dd>English (fluent) · French (beginner-intermediate)
-</dd>
-</dl>
+<blockquote>
+<p><strong>DevOps</strong></p>
+</blockquote>
+<p>Kubernetes Development · Packacing Kubernetes Applications (e.g. Helm, Kustomize, Jsonnet) · Writing Custom Kubernetes Controllers (Golang)</p>
+<blockquote>
+<p><strong>CI/CD</strong></p>
+</blockquote>
+<p>ArgoCD · Gitlab CI · Github Actions · Bash Scripting</p>
+<blockquote>
+<p><strong>GitOps and Cloud</strong></p>
+</blockquote>
+<p>Terraform · Azure · S3 Object Storage · Azure Blob Storage · Istio · Managed Databases</p>
+<blockquote>
+<p><strong>Web</strong></p>
+</blockquote>
+<p>Python · JavaScript · React · Vue · d3.js · Flask · FastAPI · ORM (e.g. SQLAlchemy) · SQL Databases (e.g. SQLite, Postgres) · Document Oriented Databases (e.g. Elasticsearch)</p>
+<blockquote>
+<p><strong>Docs</strong></p>
+</blockquote>
+<p>Static site generators (e.g. mkdocs) · Writing Software Documentation · Implementing Coding and Docstring Standards in Projects (e.g. Google Python Style Guide)</p>
+<blockquote>
+<p><strong>Data Processing</strong></p>
+</blockquote>
+<p>Pandas · Numpy · Implementing Scalable Data Processing Jobs on Kubernetes with Argo Workflows · Schema Management and Data Validation (e.g. Pandera, Pydantic)</p>
+<blockquote>
+<p><strong>Data Science</strong></p>
+</blockquote>
+<p>Text Data Analysis (e.g. spaCy) · Web Scraping (Scrapy, Beautiful Soup) · Deep Learning Frameworks (e.g. Tensorflow, Pytorch) · Deep Learning Theory (e.g. sequence models, convolutional neural networks)</p>
+<blockquote>
+<p><strong>Economics and Stats</strong></p>
+</blockquote>
+<p>Stata · MATLAB · R · Econometric Modeling (Regression Analysis, Panel Data Methods) · Time Series Econometrics · Empirical Microeconomics · Research Design · Experimental Economics</p>
+<blockquote>
+<p><strong>General</strong></p>
+</blockquote>
+<p>Public Speaking · Leadership · Consulting · Communication · Academic and Non-Academic Writing · Presentations</p>
+<blockquote>
+<p><strong>Languages</strong></p>
+</blockquote>
+<p>English (fluent) · French (beginner/intermediate)</p>
 <h2 id="open-source-software-contributions">Open Source Software Contributions</h2>
 <dl>
 <dt>Doccano</dt>
@@ -231,12 +288,12 @@
 </dd>
 </dl>
 <h2 id="education">Education</h2>
-<h3 id="undergraduate-courses-computer-science-part-time">Undergraduate Courses, Computer Science (part-time)</h3>
+<h3 id="undergraduate-courses-computer-science-core-curriculum-part-time">Undergraduate Courses, Computer Science Core Curriculum (part-time)</h3>
 <p><strong>Athabasca University · 4.00/4.00 cGPA</strong></p>
 <p>Taking the core courses in the undergraduate Computer Science curriculum to supplement my existing education and experience.</p>
 <p><strong>Completed / In Progress Courses</strong>: Object Oriented Programming · Data Structures and Algorithms · Operating Systems · Design and Analysis of Algorithms · Computer Networks</p>
 <p><strong>Remaining Courses (Expected)</strong>: Computer and Network Security · Database Management Systems · Distributed Systems</p>
-<h3 id="masters-degree-economics">Master’s Degree, Economics</h3>
+<h3 id="masters-degree-economics-focus-in-econometrics">Master’s Degree, Economics (Focus in Econometrics)</h3>
 <p><strong>Queen’s University · 4.17/4.30 cGPA</strong></p>
 <p><strong>Courses</strong>: Microeconomic Theory, Macroeconomic Theory, Quantitative Methods (Econometrics), Industrial Organization I, Empirical Microeconomics, Time Series Econometrics, Public Economics</p>
 <p><strong>Thesis</strong>: <a href="https://www.econ.queensu.ca/research/working-papers/1423" target="_blank">What Drives Bitcoin Fees? Using Segwit to Assess Bitcoin’s Long-run</a></p>
