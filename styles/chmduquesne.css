@@ -31,7 +31,7 @@ h1 {
 /* } */
 
 /* Titles of categories */
-h2 {
+h2, h3, h4 {
     /* This is called "sectioncolor" in the ConTeXt stylesheet. */
     color: #397249;
 }
@@ -90,6 +90,6 @@ hr {
 }
 
 table {
-    width: 100%;
+    width: 50%;
 }
 </style>
