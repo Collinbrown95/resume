@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume-detailed</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 17%;
+      margin-bottom:7px;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+
+  table {
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+<h1 id="collin-brown">Collin Brown</h1>
+<table>
+<thead>
+<tr class="header">
+<th><img src="../img/github.png" alt="github" /></th>
+<th><a href="https://github.com/collinbrown95" target="_blank">github.com</a></th>
+<th><img src="../img/linkedin.png" alt="linkedin" /></th>
+<th><a href="https://ca.linkedin.com/in/collin-brown-499a4580" target="_blank">linkedin.com</a></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>I do DevOps and Kubernetes platform development for a Data Science team in a large organization. I am passionate about bringing data-driven projects into production in an enterprise setting using modern open source tools.</p>
+</blockquote>
+<hr />
+<h2 id="experience">Experience</h2>
+<h3 id="lead-software-developer-jun-2022---present">Lead Software Developer · (Jun 2022 - Present)</h3>
+<p><strong>Statistics Canada · Data Science Division</strong></p>
+<p>In this position, I have two primary responsibilities: (1) Kubernetes platform development for our organization’s analytics environment (the <a href="https://statcan.github.io/daaas/en/" target="_blank">Advanced Analytics Workspace</a>) and (2) providing the required expertise to bring Data Science projects into production. I elaborate on each area of responsibility below.</p>
+<blockquote>
+<p><strong>Kubernetes Platform Development</strong></p>
+</blockquote>
+<p><strong>S3 object storage for platform users</strong></p>
+<blockquote>
+<p>TODO</p>
+</blockquote>
+<p><strong>Cloud Environment network connectivity for employees</strong></p>
+<blockquote>
+<p>TODO</p>
+</blockquote>
+<p><strong>Add specialized node pools to the kubernetes cluster</strong></p>
+<ul>
+<li>Wrote Terraform configuration to add specialized node pools to our Kubernetes cluster such as Azure’s <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/fsv2-series" target="_blank">Fsv2-series</a> VMs for CPU intensive workloads and <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/ncv3-series" target="_blank">NCv3-series</a> VMs for data science workloads that require multiple GPUs.</li>
+<li>Wrote logic in a mutating webhook to dynamically configure pod tolerations so that specific users have their pods scheduled to the correct specialized node pool.</li>
+</ul>
+<blockquote>
+<p><strong>Putting Data Science Projects into Production</strong></p>
+</blockquote>
+<p><strong>PDF Document Information Extraction Tool</strong></p>
+<ul>
+<li>Wrote helm chart for a Data Science application that uses machine learning to extract specific information from unstructured PDF documents.</li>
+</ul>
+<h3 id="senior-software-developer-may-2021---jun-2022">Senior Software Developer · (May 2021 - Jun 2022)</h3>
+<p><strong>Statistics Canada · Data Science Division</strong></p>
+<p>In this position, I was acting as the senior software developer on an 18-month cloud-native redesign of the data processing system for a large statistical program Statistics Canada. From May 2021 to July 2021, I worked directly under the project technical lead, and from August 2021 to March 31 , 2022 I acted as the technical lead for the project. The project was completed successfully (on-time and on-budget) on March 31, 2022. Listed below are my primary duties in this position</p>
+<blockquote>
+<p><strong>Supervise the work of other developers</strong></p>
+</blockquote>
+<ul>
+<li>Supervised the work of 6 different developers (not all at the same time), where each developer focused on implementing a different aspect of the system.</li>
+<li>Provided technical advisory for the project’s developers on issues related to software design, code implementation, debugging, testing, and documentation.</li>
+<li>Chaired daily stand-up meetings with the developers, the projects’ clients, and subject matter experts to ensure that the project’s deliverables were on track.</li>
+<li>Managed bi-weekly project milestones and project Gitlab issues, ensuring that project goals were met according to specifications in a timely manner.</li>
+</ul>
+<blockquote>
+<p><strong>Design and implement several cloud-native components of the system redesign</strong></p>
+</blockquote>
+<ul>
+<li>Designed and Implemented a Helm Chart, which specified the deployment of the system including components such as Argo Workflows, a custom web application service, MinIO (running in Gateway mode to Azure blob storage), Elasticsearch, and Kibana.</li>
+<li>Wrote infrastructure as code using Terraform modules to provision cloud resources through the Azure provider, such as Azure Storage Accounts and Storage Containers.</li>
+<li>Designed and Implemented a Gitlab CI/CD pipeline that builds the project’s main Docker image, performs a security scan for known CVEs, runs our automated test suite, builds and publishes the project’s documentation site, and pushes the Docker image to a private image registry.</li>
+<li>Designed the release management strategy for our project that synchronizes source code and infrastructure changes with our deployment environments so that development, test, and production environments can be updated independently.</li>
+</ul>
+<h3 id="software-developer-oct-2020---may-2021">Software Developer · (Oct 2020 - May 2021)</h3>
+<p><strong>Statistics Canada · Data Science Division</strong></p>
+<p>TODO</p>
+<h3 id="data-scientist-software-developer">Data Scientist / Software Developer</h3>
+<p><strong>Employment and Social Development Canada</strong> · <strong>Data Science Division</strong> · Aug 2018 - Oct 2020</p>
+<p>TODO</p>
+<h2 id="skills-tools-and-technology">Skills, Tools, and Technology</h2>
+<dl>
+<dt>DevOps</dt>
+<dd>Kubernetes Development · Packacing Kubernetes Applications (e.g. Helm, Kustomize, Jsonnet) · Writing Custom Kubernetes Controllers (Golang)
+</dd>
+<dt>CI/CD</dt>
+<dd>ArgoCD · Gitlab CI · Github Actions · Bash Scripting
+</dd>
+<dt>GitOps and Cloud</dt>
+<dd>Terraform · Azure · S3 Object Storage · Azure Blob Storage · Istio · Managed Databases
+</dd>
+<dt>Web</dt>
+<dd>Python · JavaScript · React · Vue · d3.js · Flask · FastAPI · ORM (e.g. SQLAlchemy) · SQL Databases (e.g. SQLite, Postgres) · Document Oriented Databases (e.g. Elasticsearch)
+</dd>
+<dt>Docs</dt>
+<dd>Static site generators (e.g. mkdocs) · Writing Software Documentation · Implementing Coding and Docstring Standards in Projects (e.g. Google Python Style Guide)
+</dd>
+<dt>Data Processing</dt>
+<dd>Pandas · Numpy · Implementing Scalable Data Processing Jobs on Kubernetes with Argo Workflows · Schema Management and Data Validation (e.g. Pandera, Pydantic)
+</dd>
+<dt>Data Science</dt>
+<dd>Text Data Analysis (e.g. spaCy) · Web Scraping (Scrapy, Beautiful Soup) · Deep Learning Frameworks (e.g. Tensorflow, Pytorch) · Deep Learning Theory (e.g. sequence models, convolutional neural networks)
+</dd>
+<dt>Economics and Stats</dt>
+<dd>Stata · MATLAB · R · Econometric Modeling (Regression Analysis, Panel Data Methods) · Time Series Econometrics · Empirical Microeconomics · Research Design · Experimental Economics
+</dd>
+<dt>General</dt>
+<dd>Public Speaking · Leadership · Consulting · Communication · Academic and Non-Academic Writing · Presentations
+</dd>
+<dt>Languages</dt>
+<dd>English (fluent) · French (beginner-intermediate)
+</dd>
+</dl>
+<h2 id="open-source-software-contributions">Open Source Software Contributions</h2>
+<dl>
+<dt>Doccano</dt>
+<dd><a href="https://github.com/doccano/doccano" target="_blank">Doccano</a> is an open source text annotation tool to facilitate data labeling for machine learning projects. On this project, I implemented internationalization on user interface, miscellaneous small feature requests, and bug fixes.
+</dd>
+</dl>
+<h2 id="research-publications">Research Publications</h2>
+<dl>
+<dt>Economics</dt>
+<dd><strong>January 2022</strong>: <a href="https://www.risk.net/journal-of-financial-market-infrastructures/7914886/what-drives-bitcoin-fees-using-segwit-to-assess-bitcoins-long-run-sustainability" target="_blank">What Drives Bitcoin Fees? Using Segwit to Assess Bitcoin’s Long-run Sustainability</a> · Published in the Journal of Financial Market Infrastructures
+</dd>
+</dl>
+<h2 id="education">Education</h2>
+<h3 id="undergraduate-courses-computer-science-part-time">Undergraduate Courses, Computer Science (part-time)</h3>
+<p><strong>Athabasca University · 4.00/4.00 cGPA</strong></p>
+<p>Taking the core courses in the undergraduate Computer Science curriculum to supplement my existing education and experience.</p>
+<p><strong>Completed / In Progress Courses</strong>: Object Oriented Programming · Data Structures and Algorithms · Operating Systems · Design and Analysis of Algorithms · Computer Networks</p>
+<p><strong>Remaining Courses (Expected)</strong>: Computer and Network Security · Database Management Systems · Distributed Systems</p>
+<h3 id="masters-degree-economics">Master’s Degree, Economics</h3>
+<p><strong>Queen’s University · 4.17/4.30 cGPA</strong></p>
+<p><strong>Courses</strong>: Microeconomic Theory, Macroeconomic Theory, Quantitative Methods (Econometrics), Industrial Organization I, Empirical Microeconomics, Time Series Econometrics, Public Economics</p>
+<p><strong>Thesis</strong>: <a href="https://www.econ.queensu.ca/research/working-papers/1423" target="_blank">What Drives Bitcoin Fees? Using Segwit to Assess Bitcoin’s Long-run</a></p>
+<p><strong>Scholarships and Awards</strong>: Canada Graduate Scholarship · Tri-Agency Recipient Recognition Award</p>
+<h3 id="bachelors-degree-honours-economics-minor-in-mathematics-and-statistics">Bachelor’s Degree (Honours), Economics (Minor in Mathematics and Statistics)</h3>
+<p><strong>McMaster University · 3.96/4.00 cGPA</strong></p>
+<p><strong>Courses</strong>: Advanced Economic Theory I &amp; II · Advanced Econometrics · Statistical Methods and Applications · Game Theory · Mathematical Economics · Calculus I–III · Linear Algebra · Directed Research in Econometrics I &amp; II</p>
+<p><strong>Thesis</strong>: Using Dynamic Probability Models to Estimate the Effect that Historical Tax Credit Claims Have on Current Period Claims</p>
+<p><strong>Scholarships and Awards</strong>: Maclean Family Academic Grant · Thompson Academic Grant · Chancellor’s Gold Medal Finalist · Hugh Clark Scholarship · Kneale Brothers’ 37 Academic Grant · Provost’s Honour Roll Medal (Third Year) · Undergraduate Student Research Award · McMaster Spectrum Competition (First Place in Social Innovation Category) · Dr. Lyman Hooker Scholarship · McMaster Entrance Scholarship · University Senate Scholarship</p>
+</body>
+</html>
