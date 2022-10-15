@@ -236,7 +236,7 @@ Taking core courses in the undergraduate Computer Science curriculum in my spare
 
 **Completed / In Progress Courses**: Object Oriented Programming · Data Structures and Algorithms · Operating Systems · Design and Analysis of Algorithms · Computer Networks
 
-### Master's Degree, Economics (Focus in Econometrics) · (2017 - 2018)
+### Master's Degree, Economics (Focus in Econometrics)
 
 **Queen's University · 4.17/4.30 cGPA**
 
@@ -246,7 +246,7 @@ Taking core courses in the undergraduate Computer Science curriculum in my spare
 
 **Scholarships and Awards**: Canada Graduate Scholarship · Tri-Agency Recipient Recognition Award
 
-### Bachelor's Degree (Honours), Economics (Minor in Mathematics and Statistics) · (2013 - 2017)
+### Bachelor's Degree (Honours), Economics (Minor in Mathematics and Statistics)
 
 **McMaster University · 3.96/4.00 cGPA**
 
