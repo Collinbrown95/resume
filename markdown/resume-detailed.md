@@ -2,84 +2,122 @@ Collin Brown
 ============
 
 | ![github](img/github.png ) | [github.com](https://github.com/collinbrown95) | ![linkedin](img/linkedin.png) | [linkedin.com](https://ca.linkedin.com/in/collin-brown-499a4580) |
-| ---------------------------- | ---------------------------------------------- | -------------------------------- | ------------------------------------------------ |
+| -------------------------- | ---------------------------------------------- | ----------------------------- | ---------------------------------------------------------------- |
 
 ----
 
-> I do DevOps and Kubernetes platform development for a Data Science
+> I do DevOps and Kubernetes platform development for a data science
 > team in a large organization. I am passionate about bringing data-driven
 > projects into production in an enterprise setting using modern open source tools.
 
 ----
 
-Experience
+Professional Experience
 ----------
 
 ### Lead Software Developer · (Jun 2022 - Present)
 
 #### Statistics Canada · Data Science Division
 
-In this position, I have three primary responsibilities: (1) Kubernetes platform development for our organization's analytics environment (the [Advanced Analytics Workspace](https://statcan.github.io/daaas/en/)); (2) putting Data Science projects into production; and (3) Providing horizontal technical advisory/consulting services to various employees in the organization. I elaborate on each area of responsibility below.
+In this position, I have three primary responsibilities:
 
-> **Kubernetes Platform Development**
+1. Kubernetes platform development for our organization's analytics environment (the [Advanced Analytics Workspace](https://statcan.github.io/daaas/en/));
+2. Putting data science projects into production; and
+3. Providing horizontal technical advisory/consulting services to various employees in the organization.
 
-**S3 object storage for platform users**
+I elaborate on each of these responsibilities below.
 
-* Created an S3 application to provide platform users with an S3 interface by combining two open source tools: [aws-js-explorer](https://github.com/StatCan/aws-js-s3-explorer) (client-side) and [S3Proxy](https://github.com/gaul/s3proxy) (server-side).
-* Wrote several middleware components to handle networking concerns such as a custom service worker to intercept and modify requests from the browser and an Istio Virtual Service to apply service mesh routing logic.
-* Wrote helm chart templates and kubernetes manifests to automatically deploy this S3 application to multiple users' namespaces with ArgoCD.
+> **1. Kubernetes platform development**
 
-**Cloud Environment network connectivity for employees**
+**Object storage for platform users**
 
-* Wrote a kubernetes controller to create several Istio resources to handle routing of certain requests to an Istio Egress Gateway.
-* Wrote ArgoCD deployment to deploy abovementioned controller alongside other required Kubernetes resources.
-* Modified Terraform configuration to provision necessary cloud resources for this feature such as an Azure Kubernetes Service (AKS) node pool, Azure subnet, and firewall rules.
+* Created an opt-in s3 application to provide platform users with an s3 interface to Azure Blob Storage by combining two open source tools: [aws-js-explorer](https://github.com/StatCan/aws-js-s3-explorer) (client-side) and [s3Proxy](https://github.com/gaul/s3proxy) (server-side).
+
+* Decreased the amount of custom code required to provide s3 object storage to our users, reducing implementation complexity and maintenance burden.
+
+* Wrote several middleware components to handle networking concerns such as a service worker to intercept and modify requests from the browser, and an Istio Virtual Service to apply service mesh routing logic.
+
+* Wrote helm chart templates and Kubernetes manifests to automatically deploy this s3 application to multiple users' namespaces with ArgoCD.
+
+**Network connectivity to internal services for authorized users**
+
+* Created a feature to allow authorized users network access to important internal services, unblocking hundreds of authorized employees who require access to these services.
+
+* Wrote a Kubernetes controller to create several Istio resources to handle routing of certain requests to an Istio egress gateway.
+
+* Wrote Kubernetes manifests to deploy abovementioned controller alongside other required Kubernetes resources.
+
+* Modified Terraform configuration to provision necessary cloud resources for this feature such as an Azure Kubernetes Service (AKS) node pool, an Azure subnet, and Azure firewall rules.
 
 
-**Add specialized node pools to the kubernetes cluster**
+**Add specialized node pools to the Kubernetes cluster**
 
-* Wrote Terraform configuration to add specialized node pools to our Kubernetes cluster such as Azure's [Fsv2-series](https://docs.microsoft.com/en-us/azure/virtual-machines/fsv2-series) VMs for CPU intensive workloads and [NCv3-series](https://docs.microsoft.com/en-us/azure/virtual-machines/ncv3-series) VMs for data science workloads that require multiple GPUs.
+* Unblocked several high priority data science projects by enabling Data Scientists to access machines with sufficient compute resources.
+
+* Wrote Terraform configuration to add specialized node pools to our Kubernetes cluster such as Azure's [Fsv2-series](https://docs.microsoft.com/en-us/azure/virtual-machines/fsv2-series) VMs for CPU intensive workloads and [NCv3-series](https://docs.microsoft.com/en-us/azure/virtual-machines/ncv3-series) VMs for deep learning workloads that require multiple GPUs.
+
 * Wrote logic in a mutating webhook to dynamically configure pod tolerations so that specific users have their pods scheduled to the correct specialized node pool.
 
-> **Putting Data Science Projects into Production**
+**Deemed employee access control**
+
+* Unblocked a Government department by enabling the department's employees to access to certain critical features on our platform.
+
+* Wrote a Kubernetes controller to implement capability-based access control by applying labels to certain Kubernetes resources.
+
+> **2. Putting data science projects into production**
 
 **Custom PDF Document Information Extraction Application**
 
-* Led an effort to deploy a custom-built PDF extraction application into our organization's internal Kubernetes production environment.
-* Wrote a helm chart to deploy several components such as a deployment for the custom web application, several cron jobs that perform actions such as an SFTP pull and data ETL, Elasticsearch Kubernetes Operator, Kibana Kubernetes Operator, and [S3Proxy](https://github.com/gaul/s3proxy).
-* Wrote terraform configuration to provision resources from Azure such as Storage Accounts and Storage Containers to be used by the application.
-* Onboarded the original developers of the application to the Kubernetes environment 
+* Led an effort to deploy a large custom-built PDF table extraction application into our organization's internal Kubernetes environment.
 
-> **Horizontal Technical Advisory**
+* Enabled dozens of employees to greatly speed up their work by searching an indexed database of extracted PDF information rather than searching for the information manually.
 
-**Cloud-Native Data Processing System Redesign**
+* Wrote a Helm chart to deploy several components such as a deployment for the custom web application, several cron jobs, Elasticsearch and Kibana Kubernetes Operators, and [s3Proxy](https://github.com/gaul/s3proxy) backed by Azure Blob Storage.
 
-* Provided technical advisory services to a project team engaging in a cloud-native redesign of a data processing system.
-* Provided recommendations around user experience, data processing workflows, code organization, and version control.
+* Wrote Terraform configuration to provision resources required by the application from Azure such as Storage Accounts and Storage Containers.
 
-**DevOps / Data Engineering Centre of Expertise (CoE)**
+* Onboarded the original application developers to our organization's internal Kubernetes environment 
 
-* Chaired weekly meetings to provide advisory services related to DevOps and Data Engineering.
-* Advised Data Science project teams on topics such as product deployments, software development design considerations, and cloud infrastructure decisions.
+> **3. Horizontal Technical Advisory**
+
+**Cloud-Native Redesign of a Large Data Processing System**
+
+* Provided technical advisory services to a project team engaging in a cloud-native redesign of a data processing system for a large statistical program at Statistics Canada.
+
+* The redesigned system significantly reduces comptue and storage costs, human error, and maintenance burden.
+
+* Provided technical recommendations around developer experience, data processing workflows, code organization, and version control.
+
+**DevOps and Data Engineering Centre of Expertise (CoE)**
+
+* Chaired weekly meetings to provide technical advisory services related to DevOps and Data Engineering.
+
+* Unblocked multiple data science projects by providing recommendations around product deployments, software design, and cloud infrastructure decisions.
 
 ### Senior Software Developer · (May 2021 - Jun 2022)  
 
 #### Statistics Canada · Data Science Division
 
-In this position, I was acting as the senior software developer on an 18-month cloud-native redesign of the data processing system for a large statistical program Statistics Canada. From May 2021 to July 2021, I worked directly under the project technical lead, and from August 2021 to March 31, 2022 I acted as the technical lead for the project. The project was delivered successfully (feature-complete, on-time, and at a cost significantly lower than the next best alternative) on March 31, 2022. Listed below were my primary duties in this position.
+In this position, I was the senior software developer on an 18-month cloud-native redesign of the data processing system for a large statistical program Statistics Canada. From May 2021 to July 2021, I worked directly under the project technical lead, and from August 2021 to March 31, 2022 I acted as the technical lead for the project. The project was delivered successfully (feature-complete, on-time, and at a cost significantly lower than the next best alternative) on March 31, 2022. Listed below were my primary duties in this position.
 
 > **Supervise the work of other developers**
 
-- Supervised the work of 6 different developers (not all at the same time), where each developer focused on implementing a different aspect of the system.
+- Supervised the work of 6 different developers, where each developer focused on implementing a different aspect of the system.
+
 - Provided technical advisory for the project's developers on issues related to software design, code implementation, debugging, testing, and documentation.
+
 - Chaired daily stand-up meetings with the developers, the projects’ clients, and subject matter experts to ensure that the project's deliverables were on track.
+
 - Managed bi-weekly project milestones and project Gitlab issues, ensuring that project goals were met according to specifications in a timely manner.
 
 > **Design and implement several cloud-native components of the system redesign**
 
-- Designed and Implemented a Helm Chart, which specified the deployment of the system including components such as Argo Workflows, a custom web application service, MinIO (running in Gateway mode to Azure blob storage), Elasticsearch, and Kibana.
-- Wrote infrastructure as code using Terraform modules to provision cloud resources through the Azure provider, such as Azure Storage Accounts and Storage Containers.
-- Designed and Implemented a Gitlab CI/CD pipeline that builds the project’s main Docker image, performs a security scan for known CVEs, runs our automated test suite, builds and publishes the project’s documentation site, and pushes the Docker image to a private image registry.
+- Wrote a Helm chart, which specified the deployment of the system including components such as Argo Workflows, a custom web application, MinIO (running in gateway mode to Azure Blob Storage), Elasticsearch, and Kibana.
+
+- Wrote infrastructure as code using Terraform modules to provision cloud resources through the Azure provider, such as Storage Accounts, Storage Containers, Object Replication Policies, and Storage Management Policies.
+
+- Wrote a Gitlab CI/CD pipeline that builds the project’s main Docker image, performs a security scan for known CVEs, runs our automated test suite, builds and publishes the project’s documentation site, and pushes the Docker image to a private image registry.
+
 - Designed the release management strategy for our project that synchronizes source code and infrastructure changes with our deployment environments so that development, test, and production environments can be updated independently. 
 
 ### Software Developer · (Oct 2020 - May 2021)
@@ -89,77 +127,89 @@ In this position, I was acting as the senior software developer on an 18-month c
 In this position, I was a core developer on an 18-month cloud-native redesign of the data processing system for a large statistical program at Statistics Canada. I list below several core features and items I implemented for this project.
 
 - Designed and implemented a framework to organize a significant amount of business logic required for data processing and validation across dozens of different data sources.
+
 - Designed and implemented a framework to apply unit testing and integration testing to the business logic of the system.
+
 - Designed and implemented other aspects of the system such as the data storage layer, the user interface layer, and the workflow orchestration (data pipeline) component.
 
-In addition, I helped various Data Scientists and Data Analysts with Data Engineering and Software Development implementations through direct help and presentations to larger audiences.
+In addition, I helped multiple Data Scientists with various Data Engineering and Software Development issues through both direct help and presentations to larger audiences. I list below several technical support services I provided in this position.
 
 - Delivered a presentation to ~50 Data Scientists on how to use Data Version Control (DVC) - a tool to synchronize large file versioning with the commit history of a Git repository.
-- Guided Data Scientists and Data Analysts to onboard their project source code and documentation to Gitlab and showed them how to apply good version control practices.
-- Consulted various Data Scientists on how to write application code to interface with certain platform services (e.g. Elasticsearch, S3-Compatible Object Storage, etc.)
 
-### Data Scientist / Software Developer (Aug 2018 - Oct 2020)
+- Guided Data Scientists to onboard their project source code and documentation to Gitlab and showed them how to apply version control best practices.
+
+- Consulted various Data Scientists about how to write application code to interface with various platform services (e.g. Elasticsearch, s3 object storage)
+
+### Data Scientist / Software Developer · (Aug 2018 - Oct 2020)
 
 #### Employment and Social Development Canada · Data Science Division
 
-In this role, I have worked on both conventional Data Science projects (e.g. data processing, machine learning, etc.) and web development for the purpose of prototyping and creating proof-of-concept products that are used to consume the outputs of Data Science projects.
+In this role, I worked on both conventional data science projects (e.g. data processing, machine learning) and web development for the purpose of prototyping and creating proof-of-concept data science products.
 
 > **Web Development**
 
-- Led the development of several proof-of-concept web applications to alleviate the administrative burden associated with common tasks.
-- Created programs to automate the processing of data (e.g. a set of scripts that automatically convert raw XML data into a formatted and populated Microsoft Excel workbook)
-- Handled small-scale deployments of applications for prototyping and testing purposes, leveraging containerization (Docker), cloud (Microsoft Azure), and version control (Git/GitHub) technologies
-- Created and contributed to various sources of instructions and software documentation
+- Led the development of several proof-of-concept web applications to alleviate the administrative burden associated with common government tasks.
+
+- Created programs to automate the processing of complex data into clean usable data artifacts (e.g. a CLI program that converts raw XML files into formatted and populated Microsoft Excel workbooks).
+
+- Handled small-scale deployments of applications for prototyping and testing purposes, leveraging containerization (Docker), cloud (Microsoft Azure), and version control (Git/GitHub) technologies.
+
+- Created and contributed to various sources of instructions and software documentation.
 
 > **Data Science and Machine Learning**
 
-- Wrote several reports with literature reviews on various methodologies (e.g. how machine learning techniques can be used in ad-hoc information retrieval)
-- Quickly tested and experimented with different machine learning techniques to assess project feasibility (e.g. applying pre-trained word embedding models to problems involving free-text data)
-- Wrote programs to independently evaluate the performance of other teams’ machine learning models
-- Tested and experimented with ways that user interaction could be recorded to implicitly label data (e.g. created a simple client-side javascript library to anonymously track how users interact with the predictions of machine learning models).
+- Wrote several reports with literature reviews on various methodologies (e.g. how machine learning techniques can be used in ad-hoc information retrieval).
+
+- Quickly tested and experimented with different machine learning techniques to assess project feasibility (e.g. applying pre-trained word embedding models to problems involving free-text data).
+
+- Wrote programs to independently evaluate the performance of other teams’ machine learning models.
+
+- Tested and experimented with ways that user interactions could be recorded to implicitly label training data (e.g. created a simple client-side javascript library to anonymously track how users interact with the predictions of machine learning models in a web application).
+
 
 Skills, Tools, and Technology
 -----------------------------
 
-> **DevOps**
+> **DevOps/Cloud**
 
-Kubernetes Development · Packacing Kubernetes Applications (e.g. Helm, Kustomize, Jsonnet) · Writing Custom Kubernetes Controllers (Golang)
+Kubernetes development · packaging Kubernetes applications (e.g. Helm, Kustomize, Jsonnet) · writing Kubernetes controllers (Golang) · building Docker images · Istio service mesh · shell scripting · ArgoCD · Gitlab CI · Github Actions · Terraform · Azure · s3 object storage · Azure Blob Storage 
 
-> **CI/CD**
+> **Web Development**
 
-ArgoCD · Gitlab CI · Github Actions · Bash Scripting
+Python · JavaScript · React · Vue · d3.js · Flask · FastAPI · ORM (e.g. SQLAlchemy) · SQL databases (e.g. SQLite, Postgres) · document oriented databases (e.g. Elasticsearch)
 
-> **GitOps and Cloud**
+> **Documentation**
 
-Terraform · Azure · S3 Object Storage · Azure Blob Storage · Istio · Managed Databases  
-
-> **Web**
-
-Python · JavaScript · React · Vue · d3.js · Flask · FastAPI · ORM (e.g. SQLAlchemy) · SQL Databases (e.g. SQLite, Postgres) · Document Oriented Databases (e.g. Elasticsearch)
-
-> **Docs**
-
-Static site generators (e.g. mkdocs) · Writing Software Documentation · Implementing Coding and Docstring Standards in Projects (e.g. Google Python Style Guide)
+static site generators (e.g. mkdocs) · writing software documentation · implementing coding and docstring standards in projects (e.g. Google Python Style Guide)
 
 > **Data Processing**
 
-Pandas · Numpy · Implementing Scalable Data Processing Jobs on Kubernetes with Argo Workflows · Schema Management and Data Validation (e.g. Pandera, Pydantic)
+Pandas · Numpy · Argo Workflows · schema management and data validation in Python (e.g. Pandera, Pydantic)
 
-> **Data Science**
+> **Data Science/Machine Learning**
 
-Text Data Analysis (e.g. spaCy) · Web Scraping (Scrapy, Beautiful Soup) · Deep Learning Frameworks (e.g. Tensorflow, Pytorch) · Deep Learning Theory (e.g. sequence models, convolutional neural networks)
+text data analysis (e.g. spaCy) · web scraping (Scrapy, Beautiful Soup) · deep learning frameworks (e.g. Tensorflow) · deep learning theory (e.g. sequence models, convolutional neural networks)
 
-> **Economics and Stats**
+> **Statistics and Economics**
 
-Stata · MATLAB · R · Econometric Modeling (Regression Analysis, Panel Data Methods) · Time Series Econometrics · Empirical Microeconomics · Research Design · Experimental Economics
+Stata · MATLAB · R · econometric modeling (e.g. regression analysis, panel data methods) · time series econometrics · empirical microeconomics · research design
 
 > **General**
 
-Public Speaking · Leadership · Consulting · Communication · Academic and Non-Academic Writing · Presentations
+public speaking · leadership · consulting · communication · academic and non-academic writing · presentations
 
 > **Languages**
 
 English (fluent) · French (beginner/intermediate)
+
+Professional Honours and Awards
+-------------------------------
+
+### Branch Award - Most Innovative Project · October 2022
+
+#### Statistics Canada · Modern Statistical Methods and Data Science Branch
+
+Received the annual branch award for the most innovative project. I was given this award for leading the team that delivered the organization's first successful cloud-native redesign of a large scale data processing system that is being used in monthly data production at Statistics Canada.
 
 Open Source Software Contributions
 ----------------------------------
@@ -177,28 +227,26 @@ Economics
 
 Education
 ---------
-### Undergraduate Courses, Computer Science Core Curriculum (part-time)
+
+### Undergraduate Coursework, Computer Science (part-time) · (2020 - Present)
 
 **Athabasca University · 4.00/4.00 cGPA**
 
-Taking the core courses in the undergraduate Computer Science curriculum to supplement my existing education and experience.
+Taking core courses in the undergraduate Computer Science curriculum in my spare time. 
 
 **Completed / In Progress Courses**: Object Oriented Programming · Data Structures and Algorithms · Operating Systems · Design and Analysis of Algorithms · Computer Networks
 
-**Remaining Courses (Expected)**: Computer and Network Security · Database Management Systems · Distributed Systems
-
-
-### Master's Degree, Economics (Focus in Econometrics)
+### Master's Degree, Economics (Focus in Econometrics) · (2017 - 2018)
 
 **Queen's University · 4.17/4.30 cGPA**
 
 **Courses**: Microeconomic Theory, Macroeconomic Theory, Quantitative Methods (Econometrics), Industrial Organization I, Empirical Microeconomics, Time Series Econometrics, Public Economics
 
-**Thesis**: [What Drives Bitcoin Fees? Using Segwit to Assess Bitcoin's Long-run](https://www.econ.queensu.ca/research/working-papers/1423)
+**Thesis**: [What Drives Bitcoin Fees? Using Segwit to Assess Bitcoin's Long-run Sustainability](https://www.econ.queensu.ca/research/working-papers/1423)
 
 **Scholarships and Awards**: Canada Graduate Scholarship · Tri-Agency Recipient Recognition Award
 
-### Bachelor's Degree (Honours), Economics (Minor in Mathematics and Statistics)
+### Bachelor's Degree (Honours), Economics (Minor in Mathematics and Statistics) · (2013 - 2017)
 
 **McMaster University · 3.96/4.00 cGPA**
 
