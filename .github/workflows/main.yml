@@ -21,7 +21,7 @@ jobs:
           apk add make texlive
       - name: Build resume
         run: |
-          make
+          make html
 
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
