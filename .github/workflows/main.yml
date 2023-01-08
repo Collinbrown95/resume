@@ -19,15 +19,15 @@ jobs:
       - name: Install dependencies
         run: |
           apk add make texlive
+
+      - name: Build Resume
+        run: |
           export TEXMF=/usr/share/texmf-dist
           make html
-          pwd
-          ls output
-          ls  /__w/resume/resume
           ls  /__w/resume/resume/output
 
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          publish_dir: /__w/resume/resume/output
