@@ -2,28 +2,29 @@
 
 name: build-resume
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build-resume:
     runs-on: ubuntu-latest
+    container: pandoc/latex:2.9
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-      - name: Test directory contents
-        run: 'ls -al'
 
+      - name: Install dependencies
+        run: |
+          apk add make texlive
       - name: Build resume
-        uses: ./actions
+        run: |
+          make
 
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
-
