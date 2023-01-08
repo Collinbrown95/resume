@@ -80,6 +80,12 @@ I elaborate on each of these responsibilities below.
 
 > **3. Horizontal Technical Advisory**
 
+**Reduce Cloud Costs on a Major Data Analytics Platform**
+
+* Automated and delegated contacting approximately 900 users of one of our organization's major analytics platforms to identify which untracked cloud resources could be deleted.
+
+* Directly reduced the annual cloud bill for one of our organization's major analytics platforms by over 10% in approximately 2 weeks, and provided recommendations that resulted in a further 20% reduction in the cloud bill.
+
 **Cloud-Native Redesign of a Large Data Processing System**
 
 * Provided technical advisory services to a project team engaging in a cloud-native redesign of a data processing system for a large statistical program at Statistics Canada.
@@ -228,13 +234,23 @@ Economics
 Education
 ---------
 
-### Undergraduate Coursework, Computer Science (part-time) · (2020 - Present)
+### Master's Degree, Information Technology: Network Technology · (2023 - Present)
+
+**Carleton University**
+
+A thesis-based degree covering the design, management and operation of computer networks.
+
+Thesis: To be determined.
+
+**Courses**: Design and Development of Data-Intensive Applications · Applied Deep Learning · Introduction to Computer Networks
+
+### Undergraduate Coursework, Computer Science (part-time)
 
 **Athabasca University · 4.00/4.00 cGPA**
 
-Taking core courses in the undergraduate Computer Science curriculum in my spare time. 
+Completed several core courses in the undergraduate Computer Science curriculum in my spare time. 
 
-**Completed / In Progress Courses**: Object Oriented Programming · Data Structures and Algorithms · Operating Systems · Design and Analysis of Algorithms · Computer Networks
+**Courses**: Object Oriented Programming · Data Structures and Algorithms · Operating Systems · Design and Analysis of Algorithms
 
 ### Master's Degree, Economics (Focus in Econometrics)
 
