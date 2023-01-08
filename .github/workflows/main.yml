@@ -19,9 +19,10 @@ jobs:
       - name: Install dependencies
         run: |
           apk add make texlive
-      - name: Build resume
-        run: |
+          export TEXMF=/usr/share/texmf-dist
           make html
+          pwd
+          ls
 
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
