@@ -60,7 +60,7 @@ Professional Experience
 Publications, Awards, Open Source Development
 ---------------------------------------------
 
-##### **Open Source Software Contributions**
+#### **Open Source Software Contributions**
 
 [Doccano](https://github.com/doccano/doccano)
 : Implemented internationalization on user interface, miscellaneous small feature requests, and bug fixes.
