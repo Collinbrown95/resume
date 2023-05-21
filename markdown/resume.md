@@ -8,15 +8,39 @@ Collin Brown
 Skills, Tools, and Technology
 -----------------------------
 
-| **DevOps**                | Kubernetes · Docker · Istio · ArgoCD · Argo Workflows · Gitlab CI · Github Actions · Bash Scripting · Terraform |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Cloud Providers**       | Azure                                                                                                           |
-| **Programming Languages** | Python · Golang · JavaScript · Java                                                                             |
-| **Data Engineering**      | Pandas · Numpy · Data Validation · Parquet · s3 · Blob Storage · Elasticsearch                                  |
-| **Data Science**          | Web Scraping · Text Analysis · Deep Learning (Pytorch)                                                          |
-| **Web Development**       | React · Vue · d3.js · Flask · FastAPI · SQLAlchemy · Mkdocs                                                     |
-| **General**               | Public Speaking · Leadership · Consulting · Communication · Presentations                                       |
-| **Languages**             | English (fluent) · French (beginner/intermediate)                                                               |
+**DevOps**
+: Kubernetes · Docker · Istio · ArgoCD · Argo Workflows · Gitlab CI · Github Actions · Bash Scripting · Terraform 
+
+------------------------
+
+**Cloud Providers**
+: Azure                                                                                                           
+
+------------------------
+
+**Languages**
+: Python · Golang · JavaScript · Java                                                                             
+
+------------------------
+
+**Data Engineering**
+: Pandas · Numpy · Data Validation · Parquet · s3 · Blob Storage · Elasticsearch                                  
+
+------------------------
+
+**Data Science**
+: Web Scraping · Text Analysis · Deep Learning (Pytorch)                                                          
+
+------------------------
+
+**Development**
+: React · Vue · d3.js · Flask · FastAPI · SQLAlchemy · Mkdocs                                                     
+
+------------------------
+
+**General**
+: Public Speaking · Leadership · Consulting · Communication · Presentations · English (fluent) · French (beginner/intermediate)                                                                                      
+
 
 Professional Experience
 -----------------------
