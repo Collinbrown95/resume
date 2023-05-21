@@ -4,4 +4,4 @@ description: "Build a document using texlive"
 runs:
   using: "docker"
   image: "docker://ghcr.io/mszep/pandoc_resume:master"
-  entrypoint: "ls /home"
+  entrypoint: "/entrypoint.sh"
