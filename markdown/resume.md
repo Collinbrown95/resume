@@ -1,7 +1,6 @@
 Collin Brown
 ============
 
-
 | ![github](img/github.png ) | [github.com](https://github.com/collinbrown95) | ![linkedin](img/linkedin.png) | [linkedin.com](https://ca.linkedin.com/in/collin-brown-499a4580) |
 | -------------------------- | ---------------------------------------------- | ----------------------------- | ---------------------------------------------------------------- |
 
@@ -24,7 +23,7 @@ Skills, Tools, and Technology
 ------------------------
 
 **Data Engineering**
-: Pandas · Numpy · Data Validation · Parquet · s3 · Blob Storage · Elasticsearch                                  
+: Pandas · Numpy · Data Validation · Parquet · Object Storage · Elasticsearch · Databricks                                
 
 ------------------------
 
@@ -35,45 +34,26 @@ Skills, Tools, and Technology
 
 **Development**
 : React · Vue · d3.js · Flask · FastAPI · SQLAlchemy · Mkdocs                                                     
-
-------------------------
-
-**General**
-: Public Speaking · Leadership · Consulting · Communication · Presentations · English (fluent) · French (beginner/intermediate)                                                                                      
-
+                                                                                  
 
 Professional Experience
 -----------------------
 
-**Lead Software Developer / Technical Advisor · (Jun 2022 - Present)**
+**Software Developer / Technical Advisor · (Oct 2020 - Present)**
 
 *Statistics Canada · Data Science Division*
 
-* Cloud cost reduction: e.g. applied container right-sizing to Kubernetes workloads; decommissioned unused Azure managed disks
+* Led the first cloud native redesign of a large data processing system that is used to produce official statistics on tourism.
 
-* Kubernetes platform feature development
-  * Enabled network connectivity to certain out-of-cluster services for authorized users
-  * Added specialized node pools to cluster for data science workloads
-  * Developed mechanism to apply differential access control for employee and non-employee cluster users
+* Significantly reduced cloud costs for the organization (e.g. applied container right-sizing to Kubernetes workloads; decommissioned 100TB of Azure managed disks).
 
-* Led an effort to deploy a large data science PDF table extraction application into our organization's internal Kubernetes environment
+* Unblocked dozens of users of a Kubernetes-based analytics environment by enabling network connectivity to certain out-of-cluster services for authorized users.
 
-* Provided horizontal technical advisory on various cloud native application development topics
+* Unblocked dozens of external users by developing a mechanism to apply differential access control for employee and non-employee cluster users.
 
-**Senior Software Developer · (May 2021 - Jun 2022)**
+* Led an effort to deploy a large data science PDF table extraction application into our organization's internal Kubernetes environment.
 
-*Statistics Canada · Data Science Division*
-
-* Led the cloud native redesign of a large data processing system that is used to produce official statistics on tourism
-  * Supervised the work of 6 different developers
-  * Developed several key components of the system such as the Helm chart, Gitlab CI pipeline, release management strategy, and workflow orchestration.
-  * Delivered the product on-time, feature-complete, and at a cost much lower than the next best alternative.
-
-**Software Developer · (Oct 2020 - May 2021)**
-
-*Statistics Canada · Data Science Division*
-
-* Designed and implemented multiple components of a cloud native data processing system including data processing and data validation logic, unit/integration tests, and the data storage layer of the system.
+* Provided horizontal technical advisory on various cloud native application development topics.
 
 **Data Scientist · (Aug 2018 - Oct 2020)**
 
@@ -105,11 +85,11 @@ Education
 
 Completed several core courses in the undergraduate Computer Science curriculum. 
 
-*Courses*: Object Oriented Programming · Data Structures and Algorithms · Operating Systems · Design and Analysis of Algorithms
+*Courses*: Object Oriented Programming · Data Structures and Algorithms · Operating Systems · Design and Analysis of Algorithms · Advanced Java Programming
 
 **Master's Degree, Economics · Queen's University**
 
-*Scholarships and Awards*: Canada Graduate Scholarship (SSHRC)· Tri-Agency Recipient Recognition Award
+*Scholarships and Awards*: Canada Graduate Scholarship (SSHRC) · Tri-Agency Recipient Recognition Award
 
 **Bachelor's Degree (Honours), Economics · McMaster University**
 
