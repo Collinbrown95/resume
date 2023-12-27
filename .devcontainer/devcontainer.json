@@ -1,0 +1,21 @@
+{
+    "name": "Bun",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "latest"
+        }
+    },
+    "containerUser": "bun",
+    "runArgs": [
+        "--userns=keep-id",
+        "--network=host"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    }
+}
