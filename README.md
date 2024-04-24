@@ -1,7 +1,7 @@
 # hugo Resume
 
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
-This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere. 
+This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.
 
 <!-- MarkdownTOC autolink="true" -->
 
@@ -31,7 +31,6 @@ This is basically a single-page website with auto-scrolling based on left-hand n
 
 ![List featured projects](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/projects.png)
 
-![Searchable content](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/search.png)
 
 See [Eddie's site](https://edwardawebb.com) for a live example.
 
