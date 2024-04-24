@@ -6,7 +6,12 @@
         <h1 class="mb-0">{{ .Site.Params.firstName }}
           <span class="text-primary">{{ .Site.Params.lastName }}</span>
         </h1>
-        <div class="subheading mb-5">{{ .Site.Params.title }} · ({{ .Site.Params.credentials }})
+        <h3 class="mb-0">
+          {{ if .Site.Params.credentials }}
+          ({{ .Site.Params.credentials }})
+          {{ end }}
+        </h3>
+        <div class="subheading mb-5">{{ .Site.Params.title }}
         </div>
 
       </div>
@@ -26,7 +31,6 @@
       </ul>
       {{ end }}
       {{ if .Site.Params.showSocializations }}
-      <h3>{{ "socialization" }}</h3>
       <ul class="list-inline list-social-icons mb-0">
         {{ range .Site.Params.handles }}
         <li class="list-inline-item">
