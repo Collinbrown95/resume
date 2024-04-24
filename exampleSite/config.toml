@@ -1,5 +1,5 @@
 title = "Collin Brown"
-baseURL = "https://example.com/"
+baseURL = "http://localhost:8000"
 theme = "resume"
 languageCode = "en-ca"
 PygmentsCodeFences = true

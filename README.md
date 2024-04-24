@@ -19,21 +19,6 @@ This is basically a single-page website with auto-scrolling based on left-hand n
     - [Contributions](#contributions)
     - [Start Bootstrap Resume](#start-bootstrap-resume)
 
-<!-- /MarkdownTOC -->
-
-## Examples
-
-![About You](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/about.png)
-
-![With optional Contact QR Code](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/qrcode.png)
-
-![Highlight skills with dev icons](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/skills.png)
-
-![List featured projects](https://raw.githubusercontent.com/eddiewebb/hugo-resume/master/images/projects.png)
-
-
-See [Eddie's site](https://edwardawebb.com) for a live example.
-
 ## Setup & Use
 
 This theme uses a combination of a custom archetype `projects` and some data files to drive content.
