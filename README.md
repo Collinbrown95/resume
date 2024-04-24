@@ -1,7 +1,7 @@
 # hugo Resume
 
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
-This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere.  Includes an `/admin` endpoint that can allow authorized users to use a WYSIWYG editor and commit files back to markdown, but with a Wordpress/CMS like experience.
+This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere. 
 
 <!-- MarkdownTOC autolink="true" -->
 
@@ -15,7 +15,6 @@ This is basically a single-page website with auto-scrolling based on left-hand n
     - [Blog / Posts](#blog--posts)
     - [Template params](#template-params)
     - [Internationalization](#internationalization)
-- [CMS Editor with Netlify CMS](#cms-editor-with-netlify-cms)
 - [Credits](#credits)
     - [Contributions](#contributions)
     - [Start Bootstrap Resume](#start-bootstrap-resume)
@@ -67,25 +66,11 @@ Similar to posts, create them under `blog`. Include any thoughts, musiings, etc.
 
 ### Template params
 
-All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml), or can be edited in the "Settings" collection if using CMS.
-
-### Internationalization
-
-Left navigation menu and section titles handle multiple languages. Use `defaultContentLanguage` parameter un [`config.toml`](https://gohugo.io/content-management/multilingual/) to choose your language. Current supported languages are :
-- `en`
-- `fr`
-
-## CMS Editor with Netlify CMS
-**Does not require deployment to Netlify!**
-
-[Netlify CMS](https://www.netlifycms.org/) is an open source project that enables CMS like experience for static site generation tools like Hugo. This theme includes a fully working integration and guide in [exampleSite/static/admin](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/static/admin)
-
-![CMS integration](/images/cms.png)
-
+All personal information outside the above details is captured by params in [`config.toml`](https://github.com/eddiewebb/hugo-resume/blob/master/exampleSite/config.toml).
 
 ## Credits
 
-This project ports the Start Bootstrap Resume theme by David Miller to support hugo.
+This project borrows significantly from the [Hugo Resume](https://github.com/eddiewebb/hugo-resume) Hugo Theme.
 
 ### Contributions
 The following users have made notable contributions:
