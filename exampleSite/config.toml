@@ -20,9 +20,7 @@ sections = [
   "experience",
   "education",
   "publications",
-  "creations",
   "contributions",
-  "blog",
 ]
 
 
