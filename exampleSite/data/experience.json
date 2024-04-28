@@ -1,20 +1,20 @@
 [
     {
-        "role":"Technical Advisor",
+        "role":"Data Engineer/Solution Architect",
         "company":"Consumer Prices Division - Statistics Canada",
-        "summary":"TODO",
-        "range":"April 2024 - Present"
-    },
-    {
-        "role":"Technical Advisor",
-        "company":"Public Health Agency of Canada",
-        "summary":"Expedited the synergies of collaborative agile tooling.",
-        "range":"March 2014 - February 2016"
+        "summary":"",
+        "range":"May 2024 - Present"
     },
     {
         "role":"Developer",
-        "company":"Previous Company Inc.",
+        "company":"Data Science Division - Statistics Canada",
         "summary":"Implemented continuous devops pipelines automationing",
-        "range":"February 2013 - March 2014"
+        "range":"October 2020 - April 2024"
+    },
+    {
+        "role":"Developer",
+        "company":"Data Science Division - Employment and Social Development Canada",
+        "summary":"Implemented continuous devops pipelines automationing",
+        "range":"August 2018 - September 2020"
     }
 ]
