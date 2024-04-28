@@ -1,82 +1,152 @@
 [
   {
-    "grouping": "Solution Architecture",
-    "skills": [
-      "IP Networking",
-      "DNS",
-      "Firewalls",
-      "Load Balancing",
-      "Microservices",
-      "RESTful APIs",
-      "SaaS/PaaS/IaaS"
-    ]
-  },
-  {
-    "grouping": "Languages, Operating Systems & Tools",
-    "skills": [
-      "Java",
-      "Python",
-      "git",
-      "subversion",
-      "linux",
-      "bash",
-      "php",
-      "jquery",
-      "javascript"
-    ]
-  },
-  {
-    "grouping": "Platform Development & Administration",
-    "skills": [
-      "Atlassian",
-      "GitHub",
-      "gitlab",
-      "Bamboo",
-      "Bitbucket",
-      "NGINX",
-      "MySQL",
-      "Wordpress"
-    ]
-  },
-  {
-    "grouping": "Data Management",
+    "grouping": "Soft Skills",
     "skills": [
       {
-        "name": "Microsoft SQL Server",
-        "icon": "msql_server"
+        "name": "Prioritizing Valuable Work",
+        "img": "https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/external-prioritize-business-administration-wanicon-lineal-color-wanicon.png"
       },
       {
-        "name": "Oracle",
-        "icon": "database"
+        "name": "Understanding Business Requirements",
+        "img": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-requirements-agile-flaticons-lineal-color-flat-icons.png"
       },
-      "MongoDB",
       {
-        "name": "Apache Spark"
+        "name": "Optimizing Team Interactions",
+        "img": "https://img.icons8.com/ios-filled/50/decentralized-network.png"
+      },
+      {
+        "name": "Documentation",
+        "img": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-documentation-productivity-flaticons-lineal-color-flat-icons-2.png"
       }
     ]
   },
   {
-    "grouping": "Containers & Cloud",
+    "grouping": "Solution Architecture",
     "skills": [
       {
-        "name": "BOSH",
-        "link": "https://bosh.io"
+        "name": "System Design",
+        "img": "https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/external-system-industrial-manufacturing-inipagistudio-mixed-inipagistudio.png"
       },
       {
-        "name": "Docker",
-        "link": "https://docker.com"
+        "name": "Software Design",
+        "img": "https://img.icons8.com/ios/50/code--v1.png"
       },
       {
-        "name": "AWS",
-        "link": "https://aws.amazon.com"
+        "name": "Cloud Networking",
+        "img": "https://img.icons8.com/fluency/48/router.png"
       },
       {
-        "name": "Google Cloud",
-        "link": "https://cloud.google.com"
+        "name": "Test Automation",
+        "img": "https://img.icons8.com/pulsar-gradient/48/pass.png"
+      }
+    ]
+  },
+  {
+    "grouping": "Data Engineering",
+    "skills": [
+      {
+        "name": "Apache Spark",
+        "icon": "devicon-apachespark-original colored"
+      },
+      {
+        "name": "Pandas",
+        "icon": "devicon-pandas-plain colored"
+      },
+      {
+        "name": "NumPy",
+        "icon": "devicon-numpy-plain colored"
+      }
+    ]
+  },
+  {
+    "grouping": "Programming Languages, Operating Systems & Tools",
+    "skills": [
+      {
+        "name": "Python",
+        "icon": "devicon-python-plain colored"
+      },
+      {
+        "name": "Java",
+        "icon": "devicon-java-plain colored"
+      },
+      {
+        "name": "Go",
+        "icon": "devicon-go-plain colored"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "devicon-javascript-plain colored"
       },
       {
         "name": "Linux",
-        "link": "https://bosh.io"
+        "icon": "devicon-linux-plain colored"
+      },
+      {
+        "name": "Git",
+        "icon": "devicon-git-plain colored"
+      },
+      {
+        "name": "Pytest",
+        "icon": "devicon-pytest-plain colored"
+      }
+    ]
+  },
+  {
+    "grouping": "Cloud Providers and DevOps",
+    "skills": [
+      {
+        "name": "Azure",
+        "icon": "devicon-azure-plain colored"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "icon": "devicon-googlecloud-plain colored"
+      },
+      {
+        "name": "Terraform",
+        "icon": "devicon-terraform-plain colored"
+      },
+      {
+        "name": "Docker",
+        "icon": "devicon-docker-plain colored"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "devicon-kubernetes-plain colored"
+      },
+      {
+        "name": "ArgoCD and Workflows",
+        "icon": "devicon-argocd-plain colored"
+      }
+    ]
+  },
+  {
+    "grouping": "Platforms & Project Management",
+    "skills": [
+      {
+        "name": "GitLab",
+        "icon": "devicon-gitlab-plain colored"
+      },
+      {
+        "name": "Jira",
+        "icon": "devicon-jira-plain colored"
+      },
+      {
+        "name": "GitHub",
+        "icon": "devicon-github-original colored"
+      }
+    ]
+  },
+  {
+    "grouping": "Natural Languages",
+    "skills": [
+      {
+        "name": "English (Fluent)",
+        "img": "https://img.icons8.com/color/48/great-britain-circular.png"
+      },
+      {
+        "name": "French (Limited Proficiency)",
+        "img": "https://img.icons8.com/color/48/france-circular.png"
       }
     ]
   }

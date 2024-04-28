@@ -7,27 +7,32 @@
     <ul>
       {{ range .skills }}
       {{ if isset . "name" }}
-      {{ $devicon := cond (in $data.devicons (lower .icon)) (lower .icon) (cond (in $data.devicons (lower .name)) (lower
-      .name) "terminal_badge") }}
       <li class="list-inline-item">
-        <i class="devicons devicons-{{ $devicon }}"></i>
+        <i class="devicon {{ .icon }}"></i>
+        {{ if isset . "img" }}
+        <img width="20" height="20" src="{{ .img }}" alt="{{ .name }}"/>
+        {{ end }}
         {{if isset . "link"}}
         <a href="{{.link}}">{{ .name }}</a>
         {{ else }}
         {{ .name }}
         {{ end }}
       </li>
-      {{ else }}
-      <li class="list-inline-item">
-        <i class="devicons devicons-{{ cond (in $data.devicons (lower .)) (lower .) " terminal_badge" }}"></i>
-        {{ . }}
-      </li>
-      <li class="list-inline-item">
-        <i class="devicon-gitlab-plain"></i>
-      </li>
       {{ end }}
       {{ end }}
     </ul>
     {{ end }}
+  </div>
+  <div>
+    <p class="small float-right">
+      Icons provided by
+      <a href="https://icons8.com/" target="_blank">
+        Icons8
+      </a>
+      and
+      <a href="https://devicon.dev/">
+        Devicon
+      </a>.
+    </p>
   </div>
 </section>
