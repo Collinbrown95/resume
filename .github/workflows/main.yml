@@ -1,33 +1,35 @@
-# This is a basic workflow to help you get started with Actions
+name: GitHub Pages
 
-name: build-resume
-
-# Controls when the action will run.
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [main]
+    branches:
+      - main  # Set a branch to deploy
+      - hugo-site
+  pull_request:
 
 jobs:
-  build-resume:
-    runs-on: ubuntu-latest
-    container: pandoc/latex:2.9
+  deploy:
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Install dependencies
-        run: |
-          apk add make texlive git
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.119.0'
+          # extended: true
 
-      - name: Build Resume
-        run: |
-          export TEXMF=/usr/share/texmf-dist
-          make html
-          ls  /__w/resume/resume/output
+      - name: Build
+        run: hugo --minify
 
-      - name: Publish
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: /__w/resume/resume/output
+          publish_dir: ./public
