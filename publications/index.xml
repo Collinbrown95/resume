@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Collin Brown</title>
-    <link>http://localhost:8000/publications/</link>
+    <link>https://collinbrown95.github.io/resume/publications/</link>
     <description>Recent content in Publications on Collin Brown</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-ca</language>
-    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:8000/publications/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://collinbrown95.github.io/resume/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Drives Bitcoin Fees? Using SegWit to Assess Bitcoin’s Long-Run Sustainability</title>
-      <link>http://localhost:8000/publications/bitcoin-fees/</link>
+      <link>https://collinbrown95.github.io/resume/publications/bitcoin-fees/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8000/publications/bitcoin-fees/</guid>
+      <guid>https://collinbrown95.github.io/resume/publications/bitcoin-fees/</guid>
       <description>Can Bitcoin remain tamper-proof in the long run? We use block-level data from the Bitcoin blockchain to estimate the impact of congestion and the US dollar price on fee rates. The introduction and adoption of the segregated witness (SegWit) protocol allows us to identify an aggregate demand curve for Bitcoin transactions. We find that SegWit has reduced fee revenue by about 70%. Fee revenue could be maximized at a block size of about 0.</description>
     </item>
     

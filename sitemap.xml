@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:8000/</loc>
+    <loc>https://collinbrown95.github.io/resume/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8000/publications/</loc>
+    <loc>https://collinbrown95.github.io/resume/publications/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8000/publications/bitcoin-fees/</loc>
+    <loc>https://collinbrown95.github.io/resume/publications/bitcoin-fees/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:8000/projects/contributions/docanno/</loc>
+    <loc>https://collinbrown95.github.io/resume/projects/contributions/docanno/</loc>
   </url><url>
-    <loc>http://localhost:8000/tags/javascript/</loc>
+    <loc>https://collinbrown95.github.io/resume/tags/javascript/</loc>
   </url><url>
-    <loc>http://localhost:8000/projects/contributions/lingui-js/</loc>
+    <loc>https://collinbrown95.github.io/resume/projects/contributions/lingui-js/</loc>
   </url><url>
-    <loc>http://localhost:8000/tags/machine-learning/</loc>
+    <loc>https://collinbrown95.github.io/resume/tags/machine-learning/</loc>
   </url><url>
-    <loc>http://localhost:8000/projects/contributions/</loc>
+    <loc>https://collinbrown95.github.io/resume/projects/contributions/</loc>
   </url><url>
-    <loc>http://localhost:8000/projects/</loc>
+    <loc>https://collinbrown95.github.io/resume/projects/</loc>
   </url><url>
-    <loc>http://localhost:8000/tags/python/</loc>
+    <loc>https://collinbrown95.github.io/resume/tags/python/</loc>
   </url><url>
-    <loc>http://localhost:8000/tags/</loc>
+    <loc>https://collinbrown95.github.io/resume/tags/</loc>
   </url>
 </urlset>
