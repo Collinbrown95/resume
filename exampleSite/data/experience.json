@@ -1,0 +1,26 @@
+[
+    {
+        "role":"Sr. Data Architect & Technical Lead",
+        "company":"Consumer Prices Division - Statistics Canada",
+        "summary":"Leading the divisional architecture task team to align existing data product sub-systems with target enterprise architecture goals, and establishing best practices for development, aiming to enhance data product maturity and open-source development.",
+        "range":"May 2024 - Present"
+    },
+    {
+        "role":"Sr. Platform Developer",
+        "company":"Various IT Teams - Statistics Canada",
+        "summary":"Led multiple development efforts for a Kubernetes-native data analytics platform, implementing horizontal capabilities and advising on data mesh architecture.",
+        "range":"October 2020 - April 2024"
+    },
+    {
+        "role":"Data Engineering Specialist",
+        "company":"Data Science Division - Statistics Canada",
+        "summary":"Led an 18-month redesign of a large data processing system for transportation statistics. Delivered the solution on time, under budget, and ensured a smooth transition to production.",
+        "range":"October 2020 - April 2024"
+    },
+    {
+        "role":"Jr. Data Scientist",
+        "company":"Data Science Division - Employment and Social Development Canada",
+        "summary":"Led Proof-of-Concept projects in data analytics and machine learning, delivering actionable insights and automation through small-scale internal tools and analysis outputs.",
+        "range":"August 2018 - September 2020"
+    }
+]

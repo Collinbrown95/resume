@@ -1,0 +1,161 @@
+[
+  {
+    "grouping": "Soft Skills",
+    "skills": [
+      {
+        "name": "Prioritizing Valuable Work",
+        "img": "https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/external-prioritize-business-administration-wanicon-lineal-color-wanicon.png"
+      },
+      {
+        "name": "Understanding Business Requirements",
+        "img": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-requirements-agile-flaticons-lineal-color-flat-icons.png"
+      },
+      {
+        "name": "Optimizing Team Interactions",
+        "img": "https://img.icons8.com/ios-filled/50/decentralized-network.png"
+      },
+      {
+        "name": "Documentation",
+        "img": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-documentation-productivity-flaticons-lineal-color-flat-icons-2.png"
+      },
+      {
+        "name": "Project Management",
+        "img": "https://img.icons8.com/arcade/64/project-management.png"
+      }
+    ]
+  },
+  {
+    "grouping": "Solution Architecture",
+    "skills": [
+      {
+        "name": "System Design",
+        "img": "https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/external-system-industrial-manufacturing-inipagistudio-mixed-inipagistudio.png"
+      },
+      {
+        "name": "Software Design",
+        "img": "https://img.icons8.com/ios/50/code--v1.png"
+      },
+      {
+        "name": "Cloud Cost Optimization",
+        "img": "https://img.icons8.com/color/48/us-dollar-circled--v1.png"
+      },
+      {
+        "name": "Cloud Networking",
+        "img": "https://img.icons8.com/fluency/48/router.png"
+      },
+      {
+        "name": "Test Automation",
+        "img": "https://img.icons8.com/pulsar-gradient/48/pass.png"
+      }
+    ]
+  },
+  {
+    "grouping": "Data Engineering",
+    "skills": [
+      {
+        "name": "Apache Spark",
+        "icon": "devicon-apachespark-original colored"
+      },
+      {
+        "name": "SQL",
+        "img": "https://img.icons8.com/external-soft-fill-juicy-fish/60/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png"
+      },
+      {
+        "name": "Data Modelling",
+        "img": "https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/external-data-warehouse-data-analytics-and-statistics-smashingstocks-mixed-smashing-stocks.png"
+      }
+    ]
+  },
+  {
+    "grouping": "Programming Languages, Operating Systems & Tools",
+    "skills": [
+      {
+        "name": "Python",
+        "icon": "devicon-python-plain colored"
+      },
+      {
+        "name": "Java",
+        "icon": "devicon-java-plain colored"
+      },
+      {
+        "name": "Go",
+        "icon": "devicon-go-plain colored"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "devicon-javascript-plain colored"
+      },
+      {
+        "name": "Linux",
+        "icon": "devicon-linux-plain colored"
+      },
+      {
+        "name": "Git",
+        "icon": "devicon-git-plain colored"
+      },
+      {
+        "name": "Pytest",
+        "icon": "devicon-pytest-plain colored"
+      }
+    ]
+  },
+  {
+    "grouping": "Cloud Providers and DevOps",
+    "skills": [
+      {
+        "name": "Azure",
+        "icon": "devicon-azure-plain colored"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "icon": "devicon-googlecloud-plain colored"
+      },
+      {
+        "name": "Terraform",
+        "icon": "devicon-terraform-plain colored"
+      },
+      {
+        "name": "Docker",
+        "icon": "devicon-docker-plain colored"
+      },
+      {
+        "name": "Kubernetes",
+        "icon": "devicon-kubernetes-plain colored"
+      },
+      {
+        "name": "ArgoCD and Workflows",
+        "icon": "devicon-argocd-plain colored"
+      }
+    ]
+  },
+  {
+    "grouping": "Platforms & Project Management",
+    "skills": [
+      {
+        "name": "GitLab",
+        "icon": "devicon-gitlab-plain colored"
+      },
+      {
+        "name": "Jira",
+        "icon": "devicon-jira-plain colored"
+      },
+      {
+        "name": "GitHub",
+        "icon": "devicon-github-original colored"
+      }
+    ]
+  },
+  {
+    "grouping": "Natural Languages",
+    "skills": [
+      {
+        "name": "English (Fluent)",
+        "img": "https://img.icons8.com/color/48/great-britain-circular.png"
+      },
+      {
+        "name": "French (Limited Proficiency)",
+        "img": "https://img.icons8.com/color/48/france-circular.png"
+      }
+    ]
+  }
+]

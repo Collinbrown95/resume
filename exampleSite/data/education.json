@@ -1,0 +1,27 @@
+[
+    {
+        "school":"[Georgia Institute of Technology](https://www.gatech.edu/)",
+        "degree":"Master of Science",
+        "major":"Computer Science",
+        "notes":"Interactive Intelligence Specialization",
+        "range":"2024 - 2027 (Expected)"
+    },
+    {
+        "school": "[Athabasca University](https://www.athabascau.ca/)",
+        "major": "Computer Science Core Curriculum",
+        "range": "2020-2023"
+    },
+    {
+        "school":"[Queen's University](https://www.queensu.ca/)",
+        "degree":"Master of Arts",
+        "major":"Economics",
+        "range":"2017-2018"
+    },
+    {
+        "school": "[McMaster University](https://www.mcmaster.ca/)",
+        "degree": "Bachelor of Arts",
+        "major": "Economics",
+        "range": "2013-2017",
+        "notes": "Minor in Mathematics and Statistics"
+    }
+]

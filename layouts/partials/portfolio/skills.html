@@ -1,0 +1,38 @@
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+  <div class="my-auto" id="skills-content">
+    <h2 class="mb-5">{{ "skills" }}</h2>
+    {{ $data := $.Data }}
+    {{ range $data.skills }}
+    <div class="subheading mb-3 skills-heading">{{ .grouping }}</div>
+    <ul>
+      {{ range .skills }}
+      {{ if isset . "name" }}
+      <li class="list-inline-item">
+        <i class="devicon {{ .icon }}"></i>
+        {{ if isset . "img" }}
+        <img width="20" height="20" src="{{ .img }}" alt="{{ .name }}"/>
+        {{ end }}
+        {{if isset . "link"}}
+        <a href="{{.link}}">{{ .name }}</a>
+        {{ else }}
+        {{ .name }}
+        {{ end }}
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+  <div>
+    <p class="small float-right">
+      Icons provided by
+      <a href="https://icons8.com/" target="_blank">
+        Icons8
+      </a>
+      and
+      <a href="https://devicon.dev/" target="_blank">
+        Devicon
+      </a>.
+    </p>
+  </div>
+</section>

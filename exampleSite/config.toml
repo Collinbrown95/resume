@@ -1,0 +1,39 @@
+title = "Collin Brown"
+baseURL = "http://localhost:8000"
+theme = "resume"
+languageCode = "en-ca"
+PygmentsCodeFences = true
+PygmentsCodeFencesGuessSyntax = true
+PygmentsStyle = "monokai"
+enableGitInfo = false
+
+[params]
+credentials = "M.Sc. Candidate, M.A."
+title = "Sr. Data Architect & Technical Lead"
+favicon = "/favicon.ico"
+firstName = "Collin"
+lastName = "Brown"
+profileImage = "img/collin.png"
+showSocializations = true
+showQr = true
+sections = [
+  "skills",
+  "experience",
+  "education",
+  "publications",
+  "contributions",
+]
+
+[[params.handles]]
+link = "https://www.linkedin.com/in/collin-brown-499a4580/"
+name = "LinkedIn"
+
+[[params.handles]]
+link = "https://github.com/collinbrown95/"
+name = "GitHub"
+
+[outputs]
+home = ["HTML", "JSON"]
+
+[taxonomies]
+tag = "tags"

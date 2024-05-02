@@ -1,1 +1,4 @@
 output/
+public/
+
+.hugo_build.lock
