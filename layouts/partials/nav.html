@@ -17,7 +17,7 @@
       </li>
       {{ range .Site.Params.sections }}
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="/#{{.}}">{{ . }}</a>
+        <a class="nav-link js-scroll-trigger" href="{{ .Site.BaseURL }}/#{{.}}">{{ . }}</a>
       </li>
       {{ end }}
     </ul>
