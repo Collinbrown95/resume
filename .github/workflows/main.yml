@@ -26,8 +26,8 @@ jobs:
 
       - name: Build
         run: |
-        cd exampleSite
-        hugo -t resume --themesDir ../..
+          cd exampleSite
+          hugo -t resume --themesDir ../..
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
