@@ -17,6 +17,10 @@
       {
         "name": "Documentation",
         "img": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-documentation-productivity-flaticons-lineal-color-flat-icons-2.png"
+      },
+      {
+        "name": "Project Management",
+        "img": "https://img.icons8.com/arcade/64/project-management.png"
       }
     ]
   },
@@ -53,12 +57,12 @@
         "icon": "devicon-apachespark-original colored"
       },
       {
-        "name": "Pandas",
-        "icon": "devicon-pandas-plain colored"
+        "name": "SQL",
+        "img": "https://img.icons8.com/external-soft-fill-juicy-fish/60/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png"
       },
       {
-        "name": "NumPy",
-        "icon": "devicon-numpy-plain colored"
+        "name": "Data Modelling",
+        "img": "https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/external-data-warehouse-data-analytics-and-statistics-smashingstocks-mixed-smashing-stocks.png"
       }
     ]
   },
