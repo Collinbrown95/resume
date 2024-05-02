@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Collin Brown</title>
+    <link>http://localhost:8000/tags/javascript/</link>
+    <description>Recent content in JavaScript on Collin Brown</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ca</language><atom:link href="http://localhost:8000/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doccano</title>
+      <link>http://localhost:8000/projects/contributions/docanno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/projects/contributions/docanno/</guid>
+      <description>Implemented internationalization on the user interface, and also implemented miscellaneous small feature requests and bug fixes.</description>
+    </item>
+    
+    <item>
+      <title>Lingui-JS</title>
+      <link>http://localhost:8000/projects/contributions/lingui-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8000/projects/contributions/lingui-js/</guid>
+      <description>I contributed an example of setting up an Rspack project with Lingui-JS.</description>
+    </item>
+    
+  </channel>
+</rss>
