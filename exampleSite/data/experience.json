@@ -2,7 +2,7 @@
     {
         "role":"Sr. Data Architect & Technical Lead",
         "company":"Consumer Prices Division - Statistics Canada",
-        "summary":"Leading the divisional architecture task team to align existing data product sub-systems with target enterprise architecture goals, and establishing best practices for development, aiming to enhance data product maturity and open-source development.",
+        "summary":"Lead the development and oversight of our division’s domain-specific data lake and medallion architecture, managing data ingestion, validation, and processing pipelines while serving as a technical advisor on data engineering practices.",
         "range":"May 2024 - Present"
     },
     {
