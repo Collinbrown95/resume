@@ -1,4 +1,7 @@
 /* General Reset */
+html {
+    scroll-behavior: smooth;
+}
 body { margin: 0; font-family: sans-serif; line-height: 1.6; }
 
 /* The Container */
@@ -27,6 +30,24 @@ header {
     max-width: 60rem; /* Prevents text from getting too wide on ultrawide monitors */
 }
 
+/* Navigation link styling */
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* The highlighting effect */
+nav a.active {
+    color: #3498db; /* Your highlight color */
+    font-weight: bold;
+    border-left: 3px solid #3498db;
+    padding-left: 0.5rem;
+}
+
+
 /* Mobile: Stack layout below 48rem (~768px) */
 @media (max-width: 48rem) {
     .site-wrapper {
@@ -42,7 +63,7 @@ header {
 
     .content-area {
         margin-left: 0;
-        width: 100%;
+        width: 90%;
         padding: 2rem 1.5rem;
     }
 }
