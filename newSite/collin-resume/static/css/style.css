@@ -1,6 +1,8 @@
 /* General Reset */
 html {
     scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity; /* Snaps to sections when close */
 }
 body { margin: 0; font-family: sans-serif; line-height: 1.6; }
 
@@ -21,15 +23,6 @@ header {
     box-sizing: border-box;
     overflow-y: auto; /* Scrollable if nav is long */
 }
-
-/* Main Body: Takes up the remaining 75% */
-.content-area {
-    margin-left: 15%; /* Matches the header width */
-    flex: 1;
-    padding: 3rem 2%; /* Relative horizontal padding */
-    max-width: 60rem; /* Prevents text from getting too wide on ultrawide monitors */
-}
-
 /* Navigation link styling */
 nav a {
     color: #ecf0f1;
@@ -46,6 +39,33 @@ nav a.active {
     border-left: 3px solid #3498db;
     padding-left: 0.5rem;
 }
+
+
+/* Main Body: Takes up the remaining 75% */
+.content-area {
+    margin-left: 15%; /* Matches the header width */
+    flex: 1;
+    padding: 3rem 2%; /* Relative horizontal padding */
+    max-width: 60rem; /* Prevents text from getting too wide on ultrawide monitors */
+}
+
+section {
+    min-height: 100vh; /* Each section is at least the full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+    padding: 4rem 10%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee; /* Visual divider */
+    scroll-snap-align: start; /* Aligns the top of the section to the top */
+}
+
+/* Ensure the first section (About) starts at the top */
+#about {
+    justify-content: flex-start;
+    padding-top: 6rem;
+}
+
 
 
 /* Mobile: Stack layout below 48rem (~768px) */

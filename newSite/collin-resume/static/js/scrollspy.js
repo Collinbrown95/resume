@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }, { 
         // rootMargin triggers the highlight when the section is 40% from the top
-        rootMargin: '-10% 0px -60% 0px' 
+        rootMargin: '-10% 0px -60% 0px', 
     });
 
     // Track all sections that have an ID
