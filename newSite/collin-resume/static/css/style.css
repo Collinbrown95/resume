@@ -1,0 +1,53 @@
+/* General Reset */
+body { margin: 0; font-family: sans-serif; line-height: 1.6; }
+
+/* The Container */
+.site-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar: Takes up 25% of the viewport width */
+header {
+    flex: 0 0 15%; /* Fixed at 25% width */
+    height: 100vh;
+    position: fixed;
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow-y: auto; /* Scrollable if nav is long */
+}
+
+/* Main Body: Takes up the remaining 75% */
+.content-area {
+    margin-left: 15%; /* Matches the header width */
+    flex: 1;
+    padding: 3rem 2%; /* Relative horizontal padding */
+    max-width: 60rem; /* Prevents text from getting too wide on ultrawide monitors */
+}
+
+/* Mobile: Stack layout below 48rem (~768px) */
+@media (max-width: 48rem) {
+    .site-wrapper {
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1.5rem;
+    }
+
+    .content-area {
+        margin-left: 0;
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Navigation & List Styling */
+nav ul { list-style: none; padding: 0; }
+nav a { color: #ecf0f1; text-decoration: none; }
+section { margin-bottom: 4rem; } /* Relative spacing between sections */
