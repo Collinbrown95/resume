@@ -1,25 +1,68 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
 
+    <!-- 1. Overview Section (Pulls from content/_index.md) -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="overview-content">
+            {{ .Content }}
+        </div>
+    </section>
+
+    <!-- 2. Experience Section (Pulls from content/experience/*.md) -->
     <section id="experience">
         <h2>Work Experience</h2>
-        {{ range where .Site.RegularPages "Section" "experience" }}
-            <div class="job-summary">
+        {{ range (where .Site.RegularPages "Section" "experience").ByDate.Reverse }}
+            <div class="exp-item">
                 <a href="{{ .RelPermalink }}">
                     <h3>{{ .Title }}</h3>
-                    <p>{{ .Params.company }} | {{ .Params.date_range }}</p>
                 </a>
+                <p><strong>{{ .Params.company }}</strong> | {{ .Params.date_range }}</p>
+                <p>{{ .Summary }}</p> <!-- Shows the first 70 words or text before <!--more--> -->
+                <a href="{{ .RelPermalink }}">Read more details &rarr;</a>
+            </div>
+        {{ end }}
+    </section>
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        {{ range .Site.Data.education }}
+            <div class="edu-item">
+                <h3>{{ .degree }}</h3>
+                <p>{{ .school }} | {{ .dates }}</p>
             </div>
         {{ end }}
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+    <!-- Publications Section -->
+    <section id="publications">
+        <h2>Publications</h2>
+        {{ range .Site.Data.publications }}
+            <div class="pub-item">
+                <h3>{{ .name }}</h3>
+                <p>{{ .date }}</p>
+            </div>
+        {{ end }}
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <h2>Awards</h2>
         <ul>
-            {{ range .Site.Data.skills }}
-                <li>{{ . }}</li>
-            {{ end }}
+        {{ range .Site.Data.awards }}
+            <li><strong>{{ .title }}</strong> - {{ .issuer }} ({{ .year }})</li>
+        {{ end }}
+        </ul>
+    </section>
+
+    <!-- Contributions Section -->
+    <section id="contributions">
+        <h2>Open Source Contributions</h2>
+        <ul>
+        {{ range .Site.Data.contributions }}
+            <li>
+                <a href="{{ .url }}">{{ .project }}</a>: {{ .description }}
+            </li>
+        {{ end }}
         </ul>
     </section>
 {{ end }}
