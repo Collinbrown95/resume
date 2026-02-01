@@ -66,27 +66,63 @@ section {
     padding-top: 6rem;
 }
 
-
+/* --- Desktop Defaults --- */
+#menu-toggle { display: none; } /* Hidden on desktop */
 
 /* Mobile: Stack layout below 48rem (~768px) */
 @media (max-width: 48rem) {
-    .site-wrapper {
-        flex-direction: column;
-    }
-
     header {
+        position: fixed; /* Keep it at the top while scrolling */
+        top: 0;
         width: 100%;
         height: auto;
-        position: relative;
-        padding: 1.5rem;
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+    /* Show the hamburger button */
+    #menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white;
+    }
+
+    /* Hide the navigation menu by default on mobile */
+    #main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    /* Show the menu when the header has the 'expanded' class */
+    header.expanded #main-nav {
+        display: block;
+    }
+
+    /* Stack links vertically on mobile */
+    nav ul {
+        flex-direction: column;
+        padding: 1rem 0;
+        text-align: center;
     }
 
     .content-area {
-        margin-left: 0;
-        width: 90%;
-        padding: 2rem 1.5rem;
+        margin-left: 0%; /* Matches the header width */
+        flex: 1;
+        padding: 3rem 2%; /* Relative horizontal padding */
+        max-width: 60rem; /* Prevents text from getting too wide on ultrawide monitors */
     }
 }
+
+
 
 /* Navigation & List Styling */
 nav ul { list-style: none; padding: 0; }

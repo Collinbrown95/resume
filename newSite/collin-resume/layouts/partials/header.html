@@ -1,5 +1,14 @@
 <header class=".header">
-    <nav>
+    <div class="header-top">
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <nav id="main-nav">
         <ul>
             {{ range .Site.Menus.main }}
             <li><a href="{{ .URL }}">{{ .Name }}</a></li>
