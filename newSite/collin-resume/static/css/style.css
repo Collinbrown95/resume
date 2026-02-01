@@ -1,7 +1,6 @@
 /* General Reset */
 html {
     scroll-behavior: smooth;
-    scroll-behavior: smooth;
     scroll-snap-type: y proximity; /* Snaps to sections when close */
 }
 body { margin: 0; font-family: sans-serif; line-height: 1.6; }
@@ -119,6 +118,10 @@ section {
         flex: 1;
         padding: 3rem 2%; /* Relative horizontal padding */
         max-width: 60rem; /* Prevents text from getting too wide on ultrawide monitors */
+    }
+
+    section {
+        scroll-snap-align: none; /* Aligns the top of the section to the top */
     }
 }
 
