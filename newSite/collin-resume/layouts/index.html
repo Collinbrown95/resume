@@ -1,0 +1,25 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        {{ range where .Site.RegularPages "Section" "experience" }}
+            <div class="job-summary">
+                <a href="{{ .RelPermalink }}">
+                    <h3>{{ .Title }}</h3>
+                    <p>{{ .Params.company }} | {{ .Params.date_range }}</p>
+                </a>
+            </div>
+        {{ end }}
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            {{ range .Site.Data.skills }}
+                <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}
