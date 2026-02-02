@@ -10,6 +10,13 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
+        <div class="skills-overview">
+            <p>
+                These are the core skills I’ve developed and applied in professional settings throughout my career. 
+                For transparency, the progress bars reflect my (subjective) <strong>level of experience and recency</strong> with each skill.
+            </p>
+        </div>
+
         {{ range .Site.Data.skills }}
         <div class="skill-category">
             <h3>{{ .category }}</h3>
@@ -30,6 +37,9 @@
             </div>
         </div>
         {{ end }}
+        <p class="skills-attribution">
+            Icons provided by <a href="https://icons8.com" target="_blank" rel="noopener">Icons8</a> and <a href="https://az-icons.com" target="_blank" rel="noopener">Azure Icons</a>
+        </p>
     </section>
     <!-- 2. Experience Section (Pulls from content/experience/*.md) -->
     <section id="experience">
