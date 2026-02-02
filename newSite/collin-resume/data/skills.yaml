@@ -1,3 +1,28 @@
-- skill: "Go / Hugo"
-- skill: "JavaScript / React"
-- skill: "Cloud Architecture"
+- category: "Programming Languages"
+  items:
+    - name: "Python"
+      img: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+      level: 90 # percentage for a progress bar
+    - name: "Java"
+      img: "https://img.icons8.com/?size=100&id=5OD485koNIrb&format=png&color=000000"
+      level: 60
+    - name: "Golang"
+      img: "https://img.icons8.com/?size=100&id=44442&format=png&color=000000"
+      level: 40 # percentage for a progress bar
+    - name: "JavaScript"
+      img: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+      level: 50
+    - name: "R"
+      img: https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000
+      level: 30
+- category: "Cloud, Infrastructure, and DevOps"
+  items:
+    - name: "Azure"
+      img: https://img.icons8.com/?size=100&id=VLKafOkk3sBX&format=png&color=000000
+      level: 75
+    - name: "GCP"
+      img: https://img.icons8.com/?size=100&id=20774&format=png&color=000000
+      level: 30
+    - name: "Kubernetes"
+      img: https://img.icons8.com/?size=100&id=cvzmaEA4kC0o&format=png&color=000000
+      level: 80
