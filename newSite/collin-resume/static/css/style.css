@@ -147,6 +147,51 @@ section {
     color: #2c3e50; /* Matches your header color for emphasis */
 }
 
+
+/*
+Education section
+*/
+
+.edu-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.edu-logo {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5%; /* Makes it a circle */
+    object-fit: cover;  /* Ensures the logo doesn't stretch */
+    border: 1px solid #eee; /* Optional: adds a subtle frame */
+    flex-shrink: 0;
+}
+
+.edu-details h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #2c3e50;
+}
+
+.edu-degree {
+    margin: 0.2rem 0;
+    font-weight: 500;
+}
+
+.edu-minor {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.edu-dates {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: #888;
+}
+
 /* --- Desktop Defaults --- */
 #menu-toggle { display: none; } /* Hidden on desktop */
 
@@ -205,6 +250,8 @@ section {
     section {
         scroll-snap-align: none; /* Aligns the top of the section to the top */
     }
+
+    
 }
 
 

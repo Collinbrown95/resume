@@ -1,6 +1,22 @@
-- school: "University of Tech"
-  degree: "B.S. in Computer Science"
-  dates: "2016 - 2020"
-- school: "Online Academy"
-  degree: "Full Stack Certification"
-  dates: "2021"
+- school: "Georgia Institute of Technology"
+  img: https://brand.gatech.edu/sites/default/files/inline-images/GTVertical_RGB.png
+  degree: "Master of Science"
+  major: "Computer Science"
+  minor: "Artificial Intelligence"
+  dates: "2024 - 2027 (expected)"
+- school: "Athabasca University"
+  img: https://www.vhv.rs/dpng/d/104-1049860_athabasca-university-hd-png-download.png
+  degree: "Undergraduate Coursework"
+  major: "Computer Science"
+  dates: "2020 - 2023"
+- school: Queen's University
+  img: https://www.queensu.ca/brand-central/sites/bcwww/files/styles/column_card_image/public/2021-11/Queens-viguide-resources-logo-vertical-1200x589-2x.jpg?itok=H69uKSlB
+  degree: Master of Arts
+  major: Economics
+  dates: 2017 - 2018
+- school: McMaster University
+  img: https://brand.mcmaster.ca/app/uploads/2024/02/mcmaster-logo-2024-col-300x300.jpg
+  degree: Bachelor of Arts
+  major: Economics
+  minor: Mathematics and Statistics
+  dates: 2013 - 2017
