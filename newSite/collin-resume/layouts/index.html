@@ -1,7 +1,28 @@
 {{ define "main" }}
     <!-- 1. Overview Section (Pulls from content/_index.md) -->
-    <section id="about">
-        <h2>About Me</h2>
+    <section id="about" class="profile-container">
+        <div class="profile-header">
+            <!-- Circular Photo -->
+            <!-- <img src="{{ .Site.Data.overview.profile_img }}" alt="Profile Picture" class="avatar"> -->
+            
+            <!-- Name with Split Styling -->
+            <h1 class="name-display">
+                <span class="first-name">{{ .Site.Data.overview.first_name }}</span><span class="last-name"> {{ .Site.Data.overview.last_name }}</span>
+            </h1>
+
+            <!-- Title and Degrees -->
+            <div class="credentials">
+                <p class="job-title">{{ .Site.Data.overview.title }}</p>
+                <p class="degrees">{{ .Site.Data.overview.degrees }}</p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-links">
+                <a href="{{ .Site.Params.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="{{ .Site.Params.github }}" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
         <div class="overview-content">
             {{ .Content }}
         </div>
