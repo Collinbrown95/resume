@@ -98,13 +98,17 @@
     </section>
 
 
-    <!-- Publications Section -->
     <section id="publications">
         <h2>Publications</h2>
         {{ range .Site.Data.publications }}
-            <div class="pub-item">
-                <h3>{{ .name }}</h3>
-                <p>{{ .date }}</p>
+            <div class="pub-item" style="margin-bottom: 1.5rem;">
+                <h3>
+                    <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+                </h3>
+                <p><strong>Published:</strong> {{ .date }}</p>
+                {{ if .description }}
+                    <p class="pub-description">{{ .description | safeHTML }}</p>
+                {{ end }}
             </div>
         {{ end }}
     </section>
