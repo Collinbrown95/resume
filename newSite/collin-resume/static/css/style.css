@@ -162,8 +162,8 @@ Education section
 .edu-logo {
     width: 6rem;
     height: 6rem;
-    border-radius: 5%; /* Makes it a circle */
-    object-fit: cover;  /* Ensures the logo doesn't stretch */
+    border-radius: 50%;
+    object-fit: cover;
     border: 1px solid #eee; /* Optional: adds a subtle frame */
     flex-shrink: 0;
 }
