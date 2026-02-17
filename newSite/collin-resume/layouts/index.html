@@ -18,8 +18,8 @@
 
             <!-- Social Icons -->
             <div class="social-links">
-                <a href="{{ .Site.Params.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="{{ .Site.Params.github }}" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="{{ .Site.Data.overview.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="{{ .Site.Data.overview.github }}" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
 
@@ -100,12 +100,19 @@
 
     <section id="publications">
         <h2>Publications</h2>
-        {{ range .Site.Data.publications }}
+        {{ range (sort .Site.Data.publications "order" "desc") }}
             <div class="pub-item" style="margin-bottom: 1.5rem;">
                 <h3>
                     <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
                 </h3>
                 <p><strong>Published:</strong> {{ .date }}</p>
+                {{ if .journal }}
+                    <p><strong>Journal:</strong> {{ .journal | safeHTML}}</p>
+                {{ end }}
+
+                {{ if .audience }}
+                    <p><strong>Audience:</strong> {{ .audience | safeHTML }}</p>
+                {{ end }}
                 {{ if .description }}
                     <p class="pub-description">{{ .description | safeHTML }}</p>
                 {{ end }}
