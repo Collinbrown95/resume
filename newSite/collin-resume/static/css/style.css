@@ -13,7 +13,7 @@ body { margin: 0; font-family: sans-serif; line-height: 1.6; }
 
 /* Sidebar: Takes up 25% of the viewport width */
 header {
-    flex: 0 0 15%; /* Fixed at 25% width */
+    flex: 0 0 15%;
     height: 100vh;
     position: fixed;
     background: #2c3e50;
@@ -196,10 +196,6 @@ Education section
 Overview css
 */
 
-.profile-container {
-    text-align: left;
-    padding: 2rem 2rem;
-}
 
 /* Circular Photo */
 .avatar {
@@ -256,7 +252,7 @@ Overview css
 #menu-toggle { display: none; } /* Hidden on desktop */
 
 /* Mobile: Stack layout below 48rem (~768px) */
-@media (max-width: 48rem) {
+@media (max-width: 60rem) {
     header {
         position: fixed; /* Keep it at the top while scrolling */
         top: 0;
