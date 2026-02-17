@@ -124,7 +124,7 @@
     <section id="awards">
         <h2>Awards</h2>
         <ul>
-        {{ range .Site.Data.awards }}
+        {{ range (sort .Site.Data.awards "year" "desc") }}
             <li><strong>{{ .title }}</strong> - {{ .issuer }} ({{ .year }})</li>
         {{ end }}
         </ul>
